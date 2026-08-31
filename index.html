@@ -1,0 +1,105 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>プラットフォーム変更ウォッチ</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--line:#e3e6ea;--tx:#1c1e21;--sub:#6b7280;
+ --news:#2563eb;--rule:#7c3aed;--app:#059669;--ui:#d97706;--red:#d94a3d}
+*{box-sizing:border-box}
+body{font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;margin:0;
+ background:var(--bg);color:var(--tx);line-height:1.7}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 20px 80px}
+h1{font-size:22px;margin:0 0 4px}
+.time{color:var(--sub);font-size:13px;margin:0 0 20px}
+.banner{border-radius:12px;padding:18px 22px;font-size:16px;margin-bottom:22px}
+.banner span{display:block;font-size:13px;opacity:.8;margin-top:2px}
+.banner.hit{background:#fff1f0;border:1px solid #f3c9c4;color:#a52a1f}
+.banner.mid{background:#fff8e8;border:1px solid #ecd9a8;color:#8a6100}
+.banner.ok{background:#eef7f0;border:1px solid #cbe5d3;color:#256b3d}
+.banner b{font-size:24px}
+.tiles{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-bottom:12px}
+.tile{background:var(--card);border:1px solid var(--line);border-top:4px solid #cbd5e1;
+ border-radius:12px;padding:14px 16px}
+.tile.todo{border-top-color:var(--red)}
+.tile.fyi{border-top-color:var(--ui)}
+.tile.ok{border-top-color:#34a853}
+.tile.err{border-top-color:#b8860b}
+.tile h3{margin:0;font-size:16px}
+.tstate{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;
+ padding:2px 10px;margin:6px 0 8px;background:#eef1f5;color:#4b5563}
+.tile.todo .tstate{background:#fdeaea;color:#a52a1f}
+.tile.fyi .tstate{background:#fdf1de;color:#8a6100}
+.tile.ok .tstate{background:#e8f5ec;color:#256b3d}
+ul.tlist{list-style:none;margin:0;padding:0}
+ul.tlist li{font-size:13px;padding:3px 0}
+ul.tlist a{color:var(--tx);text-decoration:none}
+ul.tlist a:hover{text-decoration:underline}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px}
+.dot.news{background:var(--news)}.dot.rule{background:var(--rule)}
+.dot.app{background:var(--app)}.dot.ui{background:var(--ui)}
+.tnone{margin:0;font-size:13px;color:var(--sub)}
+h2{font-size:15px;color:var(--sub);font-weight:600;margin:34px 0 12px}
+h2.plathead{font-size:19px;color:var(--tx);border-bottom:2px solid var(--line);
+ padding-bottom:8px;margin-top:40px}
+.sechead{font-size:14px;margin:18px 0 10px;color:var(--sub);font-weight:600}
+.sechead.todo{color:#a52a1f;border-left:5px solid var(--red);padding-left:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+ margin-bottom:16px;overflow:hidden;scroll-margin-top:20px}
+.card header{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+ padding:14px 18px;border-bottom:1px solid var(--line);background:#fbfcfd}
+.card h3{font-size:16px;margin:0;flex:1}
+.flag{font-size:12px;font-weight:700;border-radius:5px;padding:3px 10px}
+.flag.todo{background:var(--red);color:#fff}
+.flag.fyi{background:#e9ecf1;color:#5b6472}
+.badge{font-size:12px;font-weight:700;color:#fff;border-radius:5px;padding:3px 9px}
+.badge.news{background:var(--news)}.badge.rule{background:var(--rule)}
+.badge.app{background:var(--app)}.badge.ui{background:var(--ui)}
+.src{font-size:13px;color:var(--news);text-decoration:none}
+.body{padding:16px 18px}
+ul.news{list-style:none;margin:0;padding:0}
+ul.news li{padding:8px 0;border-bottom:1px dashed var(--line);display:flex;gap:10px;
+ align-items:baseline;flex-wrap:wrap}
+ul.news li:last-child{border:0}
+.date{color:var(--sub);font-size:13px;font-variant-numeric:tabular-nums}
+.cat{font-size:11px;background:#eef1f5;color:#4b5563;border-radius:4px;padding:1px 7px}
+ul.news a{color:var(--tx);text-decoration:none;border-bottom:1px solid #cbd5e1}
+.ln{margin:4px 0;padding:8px 12px;border-radius:8px;font-size:14px}
+.ln.add{background:#eaf7ee;border-left:4px solid #34a853}
+.ln.del{background:#fdeeee;border-left:4px solid #ea4335;text-decoration:line-through;color:#7a3b38}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:12px}
+.shots figure{margin:0}
+.shots figcaption{font-size:12px;color:var(--sub);margin-bottom:6px}
+.shots img{width:100%;border:1px solid var(--line);border-radius:8px;display:block}
+.hint{font-size:12px;color:var(--sub);margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;
+ padding:6px 14px;font-size:13px;color:var(--sub)}
+.chip small{display:block;font-size:11px;color:#9aa1ab}
+.errs{background:#fffaf0;border:1px solid #f0dfb8;border-radius:10px;padding:12px 16px;
+ font-size:13px;color:#8a6100;margin-bottom:16px}
+details summary{cursor:pointer;font-size:14px;color:var(--sub);margin-bottom:10px}
+.hday{margin-bottom:14px}
+.hday b{font-size:13px;color:var(--sub)}
+.hday ul{list-style:none;margin:6px 0 0;padding:0}
+.hday li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 12px;
+ margin-bottom:6px;font-size:14px}
+.tag{font-size:11px;background:#eef1f5;border-radius:4px;padding:2px 7px;margin-right:8px;color:#4b5563}
+.sub{display:block;font-size:12px;color:var(--sub);margin-top:2px}
+@media(max-width:700px){.shots{grid-template-columns:1fr}}
+.picker{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 14px;
+ margin-bottom:18px;font-size:14px}
+.picker select{font-size:14px;padding:4px 8px;border:1px solid var(--line);border-radius:6px;
+ margin-left:6px;background:#fff}
+.pn{font-size:12px;color:var(--sub);margin-left:10px}
+</style>
+<div class="wrap">
+<h1>プラットフォーム変更ウォッチ</h1>
+<p class="time">最終チェック 2026-08-31 11:43</p>
+<div class='picker'>見る日付 <select onchange="location.href=this.value"><option value='2026-08-31.html' selected>2026-08-31（最新）</option></select><span class='pn'>過去1日分を保存しています</span></div>
+<div class='banner ok'>変更はありませんでした<span>1 のプラットフォームすべてで、マニュアルの修正は不要です</span></div>
+<div class="tiles"><div class='tile ok'><h3>メルカリ</h3><span class='tstate'>変更なし</span><p class='tnone'>見た 7 か所すべて変わっていません</p></div></div>
+
+<h2>変更がなかったところ</h2>
+<details><summary>すべて見る（7 か所）</summary><div class="chips"><span class='chip'>メルカリ / 公式お知らせ（メルカリびより）<small>変更なし</small></span><span class='chip'>メルカリ / 利用規約<small>変更なし</small></span><span class='chip'>メルカリ / 禁止されている出品物<small>変更なし</small></span><span class='chip'>メルカリ / 禁止されている行為<small>変更なし</small></span><span class='chip'>メルカリ / iOSアプリの更新<small>現在 5.218.0（2026-08-24 公開）</small></span><span class='chip'>メルカリ / Web画面の作り（トップ）<small>部品 13 種類を監視中</small></span><span class='chip'>メルカリ / Web画面の作り（検索結果）<small>部品 16 種類を監視中</small></span></div></details>
+<h2>これまでに見つかった変更</h2>
+<p class='hint'>まだありません</p>
+</div></html>
