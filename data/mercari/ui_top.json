@@ -1,0 +1,17 @@
+{
+ "skeleton": [
+  "a#language-picker-link",
+  "button[button]",
+  "div#image-search-button",
+  "div#list-slot",
+  "div#mercari-logo",
+  "div#search-autocomplete",
+  "div#search-submit-button",
+  "div#tabs",
+  "div[combobox]",
+  "div[list]",
+  "div[tablist]",
+  "div[tabpanel]",
+  "form#chip-search-input"
+ ]
+}

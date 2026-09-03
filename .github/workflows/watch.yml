@@ -1,0 +1,54 @@
+name: platform-watch
+
+on:
+  schedule:
+    - cron: "30 0 * * *"   # 毎日 9:30（日本時間）
+  workflow_dispatch:        # 手動でも実行できる
+
+permissions:
+  contents: write
+
+concurrency:
+  group: platform-watch
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 前回撮った画面写真を引き継ぐ（比較用）
+      - uses: actions/cache@v4
+        with:
+          path: data
+          key: pw-shots-${{ github.run_id }}
+          restore-keys: pw-shots-
+
+      - name: Chrome を用意する
+        run: |
+          if [ -x /usr/bin/google-chrome ]; then
+            echo "PW_CHROME=/usr/bin/google-chrome" >> "$GITHUB_ENV"
+          else
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq chromium-browser
+            echo "PW_CHROME=$(command -v chromium-browser || command -v chromium)" >> "$GITHUB_ENV"
+          fi
+
+      - name: チェックを実行する
+        env:
+          PW_SLACK_WEBHOOK: ${{ secrets.PW_SLACK_WEBHOOK }}
+          PW_NOPUSH: "1"
+        run: python3 watch.py
+
+      - name: 結果を公開ページに反映する
+        run: |
+          git config user.name platform-watch
+          git config user.email y.nakamura@busoken.com
+          git add -A
+          if git diff --cached --quiet; then
+            echo "変わりがないため更新しませんでした"
+          else
+            git commit -qm "$(TZ=Asia/Tokyo date +%Y-%m-%d)"
+            git push
+          fi

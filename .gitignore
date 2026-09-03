@@ -1,0 +1,5 @@
+config.json
+.DS_Store
+data/run.log
+data/_chrome/
+data/*/shots/

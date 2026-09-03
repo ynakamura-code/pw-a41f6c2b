@@ -1,0 +1,75 @@
+{
+  "id": "mercari",
+  "name": "メルカリ",
+  "order": 1,
+  "sources": [
+    {
+      "id": "news",
+      "label": "公式お知らせ（メルカリびより）",
+      "kind": "news",
+      "url": "https://jp-news.mercari.com/info",
+      "link_pattern": "^https://jp-news\\.mercari\\.com/(info|articles)/"
+    },
+    {
+      "id": "tos",
+      "label": "利用規約",
+      "kind": "text",
+      "url": "https://static.jp.mercari.com/tos"
+    },
+    {
+      "id": "prohibited_items",
+      "label": "禁止されている出品物",
+      "kind": "text",
+      "url": "https://help.jp.mercari.com/guide/articles/259/"
+    },
+    {
+      "id": "prohibited_acts",
+      "label": "禁止されている行為",
+      "kind": "text",
+      "url": "https://help.jp.mercari.com/guide/articles/258/"
+    },
+    {
+      "id": "app_ios",
+      "label": "iOSアプリの更新",
+      "kind": "appstore",
+      "app_id": "667861049",
+      "country": "jp"
+    },
+    {
+      "id": "flow_sell",
+      "label": "出品までの流れ・売り方",
+      "kind": "text",
+      "url": "https://help.jp.mercari.com/guide/articles/62/"
+    },
+    {
+      "id": "flow_after_sold",
+      "label": "商品が売れた後の流れ",
+      "kind": "text",
+      "url": "https://help.jp.mercari.com/guide/articles/63/"
+    },
+    {
+      "id": "ship_rakuraku",
+      "label": "らくらくメルカリ便の利用方法",
+      "kind": "text",
+      "url": "https://help.jp.mercari.com/guide/articles/123/"
+    },
+    {
+      "id": "ship_table",
+      "label": "配送方法 早わかり表",
+      "kind": "text",
+      "url": "https://help.jp.mercari.com/guide/articles/1080/"
+    },
+    {
+      "id": "ui_top",
+      "label": "Web画面の作り（トップ）",
+      "kind": "ui",
+      "url": "https://jp.mercari.com/"
+    },
+    {
+      "id": "ui_search",
+      "label": "Web画面の作り（検索結果）",
+      "kind": "ui",
+      "url": "https://jp.mercari.com/search?keyword=%E6%9C%AC"
+    }
+  ]
+}
