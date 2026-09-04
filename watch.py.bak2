@@ -33,119 +33,6 @@ CHROME = os.environ.get("PW_CHROME") or (
 JST = timezone(timedelta(hours=9))
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
-CSS = """:root{--bg:#f6f7f9;--card:#fff;--line:#e3e6ea;--tx:#1c1e21;--sub:#6b7280;
- --news:#2563eb;--rule:#7c3aed;--app:#059669;--ui:#d97706;--red:#d94a3d}
-*{box-sizing:border-box}
-body{font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;margin:0;
- background:var(--bg);color:var(--tx);line-height:1.7}
-.wrap{max-width:1080px;margin:0 auto;padding:32px 20px 80px}
-h1{font-size:22px;margin:0 0 4px}
-.time{color:var(--sub);font-size:13px;margin:0 0 20px}
-.banner{border-radius:12px;padding:18px 22px;font-size:16px;margin-bottom:22px}
-.banner span{display:block;font-size:13px;opacity:.8;margin-top:2px}
-.banner.hit{background:#fff1f0;border:1px solid #f3c9c4;color:#a52a1f}
-.banner.mid{background:#fff8e8;border:1px solid #ecd9a8;color:#8a6100}
-.banner.ok{background:#eef7f0;border:1px solid #cbe5d3;color:#256b3d}
-.banner b{font-size:24px}
-.tiles{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-bottom:12px}
-.tile{background:var(--card);border:1px solid var(--line);border-top:4px solid #cbd5e1;
- border-radius:12px;padding:14px 16px}
-.tile.todo{border-top-color:var(--red)}
-.tile.fyi{border-top-color:var(--ui)}
-.tile.ok{border-top-color:#34a853}
-.tile.err{border-top-color:#b8860b}
-.tile h3{margin:0;font-size:16px}
-.tstate{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;
- padding:2px 10px;margin:6px 0 8px;background:#eef1f5;color:#4b5563}
-.tile.todo .tstate{background:#fdeaea;color:#a52a1f}
-.tile.fyi .tstate{background:#fdf1de;color:#8a6100}
-.tile.ok .tstate{background:#e8f5ec;color:#256b3d}
-ul.tlist{list-style:none;margin:0;padding:0}
-ul.tlist li{font-size:13px;padding:3px 0}
-ul.tlist a{color:var(--tx);text-decoration:none}
-ul.tlist a:hover{text-decoration:underline}
-.dot{display:inline-block;width:8px;height:8px;border-radius:50%%;margin-right:7px}
-.dot.news{background:var(--news)}.dot.rule{background:var(--rule)}
-.dot.app{background:var(--app)}.dot.ui{background:var(--ui)}
-.tnone{margin:0;font-size:13px;color:var(--sub)}
-h2{font-size:15px;color:var(--sub);font-weight:600;margin:34px 0 12px}
-h2.plathead{font-size:19px;color:var(--tx);border-bottom:2px solid var(--line);
- padding-bottom:8px;margin-top:40px}
-.sechead{font-size:14px;margin:18px 0 10px;color:var(--sub);font-weight:600}
-.sechead.todo{color:#a52a1f;border-left:5px solid var(--red);padding-left:10px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
- margin-bottom:16px;overflow:hidden;scroll-margin-top:20px}
-.card header{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
- padding:14px 18px;border-bottom:1px solid var(--line);background:#fbfcfd}
-.card h3{font-size:16px;margin:0;flex:1}
-.flag{font-size:12px;font-weight:700;border-radius:5px;padding:3px 10px}
-.flag.todo{background:var(--red);color:#fff}
-.flag.fyi{background:#e9ecf1;color:#5b6472}
-.badge{font-size:12px;font-weight:700;color:#fff;border-radius:5px;padding:3px 9px}
-.badge.news{background:var(--news)}.badge.rule{background:var(--rule)}
-.badge.app{background:var(--app)}.badge.ui{background:var(--ui)}
-.src{font-size:13px;color:#fff;background:var(--news);text-decoration:none;
- border-radius:6px;padding:5px 12px;white-space:nowrap}
-.src:hover{opacity:.85}
-.tlink{color:var(--tx);text-decoration:none}
-.tlink:hover{text-decoration:underline}
-.golink{margin:12px 0 0}
-.golink a{display:inline-block;font-size:13px;color:var(--news);text-decoration:none;
- border:1px solid #c7d7f0;background:#f2f7ff;border-radius:8px;padding:7px 14px}
-.golink a:hover{background:#e6f0ff}
-.body{padding:16px 18px}
-ul.news{list-style:none;margin:0;padding:0}
-ul.news li{padding:8px 0;border-bottom:1px dashed var(--line);display:flex;gap:10px;
- align-items:baseline;flex-wrap:wrap}
-ul.news li:last-child{border:0}
-.date{color:var(--sub);font-size:13px;font-variant-numeric:tabular-nums}
-.cat{font-size:11px;background:#eef1f5;color:#4b5563;border-radius:4px;padding:1px 7px}
-ul.news a{color:var(--tx);text-decoration:none;border-bottom:1px solid #cbd5e1}
-.ln{margin:4px 0;padding:8px 12px;border-radius:8px;font-size:14px}
-.ln.add{background:#eaf7ee;border-left:4px solid #34a853}
-.ln.del{background:#fdeeee;border-left:4px solid #ea4335;text-decoration:line-through;color:#7a3b38}
-.shots{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:12px}
-.shots figure{margin:0}
-.shots figcaption{font-size:12px;color:var(--sub);margin-bottom:6px}
-.shots img{width:100%%;border:1px solid var(--line);border-radius:8px;display:block}
-.hint{font-size:12px;color:var(--sub);margin:0}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{background:#fff;border:1px solid var(--line);border-radius:999px;
- padding:6px 14px;font-size:13px;color:var(--sub);text-decoration:none;display:inline-block}
-a.chip:hover{border-color:var(--news);color:var(--news)}
-.chip small{display:block;font-size:11px;color:#9aa1ab}
-.errs{background:#fffaf0;border:1px solid #f0dfb8;border-radius:10px;padding:12px 16px;
- font-size:13px;color:#8a6100;margin-bottom:16px}
-details summary{cursor:pointer;font-size:14px;color:var(--sub);margin-bottom:10px}
-.hday{margin-bottom:14px}
-.hday b{font-size:13px;color:var(--sub)}
-.hday ul{list-style:none;margin:6px 0 0;padding:0}
-.hday li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 12px;
- margin-bottom:6px;font-size:14px}
-.hday li a{color:var(--tx);text-decoration:none;border-bottom:1px solid #cbd5e1}
-.hday li a:hover{color:var(--news);border-color:var(--news)}
-.tag{font-size:11px;background:#eef1f5;border-radius:4px;padding:2px 7px;margin-right:8px;color:#4b5563}
-.sub{display:block;font-size:12px;color:var(--sub);margin-top:2px}
-@media(max-width:700px){.shots{grid-template-columns:1fr}}
-.picker{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 14px;
- margin-bottom:18px;font-size:14px}
-.picker select{font-size:14px;padding:4px 8px;border:1px solid var(--line);border-radius:6px;
- margin-left:6px;background:#fff}
-.pn{font-size:12px;color:var(--sub);margin-left:10px}
-.prow2{margin-top:8px;padding-top:8px;border-top:1px solid var(--line);font-size:13px;color:var(--sub)}
-.plink{display:inline-block;margin:3px 6px 3px 0;padding:3px 10px;background:#f2f4f7;
- border:1px solid var(--line);border-radius:999px;color:var(--tx);text-decoration:none;font-size:13px}
-.plink:hover{background:#e8edf5;border-color:#c7d2e0}
-.plink.on{background:#1c1e21;color:#fff;border-color:#1c1e21}
-.srclist{list-style:none;padding:0;margin:0}
-.srclist li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin-bottom:6px}
-.srclist a{color:var(--tx)}
-.evday{margin:0 0 18px}
-.evday>b{font-size:13px;color:var(--sub)}
-.ev{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:8px 0}
-.ev h3{font-size:15px;margin:0 0 6px}
-.back{font-size:13px;color:var(--sub);text-decoration:none}"""
-
 KEEP_SHOTS = 8
 UI_BIG = 5   # 画面の部品がこの数以上入れ替わったら「大幅な変更」とみなす
 
@@ -665,8 +552,7 @@ def run(only=None, shots=True, send=True):
                                 "first_run": False, "added": [], "removed": [], "items": [],
                                 "note": "", "shot_now": "", "shot_prev": "", "checked_at": now})
 
-    cutoff = (now_dt - timedelta(days=KEEP_DAYS)).strftime("%Y-%m-%d")
-    history = [h for h in history if h.get("checked_at", "")[:10] >= cutoff][:3000]
+    history = history[:300]
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(HISTORY, "w", encoding="utf-8") as f:
         json.dump(history, f, ensure_ascii=False, indent=1)
@@ -745,30 +631,6 @@ def site_days():
     return sorted(set(ds), reverse=True)
 
 
-def platform_list():
-    """platforms/*.json から (id, 名前) を並び順で返す。"""
-    out = []
-    for fn in sorted(os.listdir(PLATFORM_DIR)):
-        if not fn.endswith(".json"):
-            continue
-        with open(os.path.join(PLATFORM_DIR, fn), encoding="utf-8") as f:
-            p = json.load(f)
-        out.append((p["id"], p["name"], p.get("order", 100), p["sources"]))
-    out.sort(key=lambda x: (x[2], x[1]))
-    return [(x[0], x[1]) for x in out]
-
-
-def platform_sources(pid):
-    for fn in sorted(os.listdir(PLATFORM_DIR)):
-        if not fn.endswith(".json"):
-            continue
-        with open(os.path.join(PLATFORM_DIR, fn), encoding="utf-8") as f:
-            p = json.load(f)
-        if p["id"] == pid:
-            return p
-    return None
-
-
 PICKER_RE = re.compile(r"<div class='picker'>.*?</div>", re.S)
 
 
@@ -778,13 +640,9 @@ def build_picker(days, cur):
                    % (esc(d), " selected" if d == cur else "", esc(d),
                       "（最新）" if d == days[0] else "")
                    for d in days)
-    links = " ".join("<a class='plink' href='p-%s.html'>%s</a>" % (esc(pid), esc(name))
-                     for pid, name in platform_list())
-    return ("<div class='picker'>"
-            "<div class='prow'>見る日付 <select onchange=\"location.href=this.value\">%s</select>"
+    return ("<div class='picker'>見る日付 <select onchange=\"location.href=this.value\">%s</select>"
             "<span class='pn'>%d日分を保存しています（最大%d日）</span></div>"
-            "<div class='prow2'>プラットフォーム別にまとめて見る： %s</div>"
-            "</div>" % (opts, len(days), KEEP_DAYS, links))
+            % (opts, len(days), KEEP_DAYS))
 
 
 def refresh_pickers(days):
@@ -809,78 +667,6 @@ def prune_site():
     for d in glob.glob(os.path.join(SITE, "shots", "20*")):
         if os.path.basename(d) not in keep:
             shutil.rmtree(d, ignore_errors=True)
-
-
-def write_platform_pages(history, results, days, now):
-    """プラットフォームごとに、保存している期間の変更をまとめた1ページを作る。"""
-    latest = {}
-    for r in results:
-        latest[(r["platform"], r["source"])] = r
-    for pid, name in platform_list():
-        plat = platform_sources(pid) or {"sources": []}
-        evs = [h for h in history if h.get("platform") == pid]
-
-        # いま見ているページの一覧
-        rows = []
-        for src in plat["sources"]:
-            r = latest.get((pid, src["id"]), {})
-            url = r.get("url") or src.get("url", "")
-            label = esc(src["label"])
-            kind = esc(KIND.get(src["kind"], (src["kind"],))[0])
-            if r.get("error"):
-                state = "<span style='color:#a52a1f'>取得できませんでした</span>"
-            elif r.get("changed"):
-                state = "<b>今日 変更あり</b>"
-            else:
-                state = esc(r.get("note") or "変更なし")
-            title = ("<a href='%s' target='_blank'>%s ↗</a>" % (esc(url), label)) if url else label
-            rows.append("<li><span class='tag'>%s</span>%s<span class='sub'>%s</span></li>"
-                        % (kind, title, state))
-
-        # 変更の履歴（日付ごと）
-        byday = {}
-        for h in evs:
-            byday.setdefault(h["checked_at"][:10], []).append(h)
-        blocks = []
-        for d in sorted(byday, reverse=True):
-            cards = []
-            for h in byday[d]:
-                h = dict(h)
-                h.setdefault("anchor", "")
-                mark = "🔴 " if impact_of(h) else "👀 "
-                link = ("<a href='%s' target='_blank'>%s ↗</a>"
-                        % (esc(h.get("url", "")), esc(h["label"]))) if h.get("url") else esc(h["label"])
-                cards.append("<div class='ev'><h3>%s%s</h3>%s</div>" % (mark, link, card_body(h)))
-            page_link = "<a class='back' href='%s.html'>この日のレポートを見る →</a>" % esc(d)
-            blocks.append("<div class='evday'><b>%s</b> %s%s</div>"
-                          % (esc(d), page_link, "".join(cards)))
-
-        links = " ".join("<a class='plink%s' href='p-%s.html'>%s</a>"
-                         % (" on" if q == pid else "", esc(q), esc(nm))
-                         for q, nm in platform_list())
-        nav = ("<div class='picker'><div class='prow'>"
-               "<a class='back' href='index.html'>← 最新のレポートに戻る</a>"
-               "<span class='pn'>%d日分を保存しています（最大%d日）</span></div>"
-               "<div class='prow2'>プラットフォーム別： %s</div></div>" % (len(days), KEEP_DAYS, links))
-
-        doc = """<!doctype html><html lang="ja"><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>%s の変更履歴｜プラットフォーム変更ウォッチ</title>
-<style>__CSS__</style>
-<div class="wrap">
-<h1>%s の変更履歴</h1>
-<p class="time">最終チェック %s</p>
-%s
-<h2>いま見ているページ（%d か所）</h2>
-<ul class="srclist">%s</ul>
-<h2>見つかった変更（保存している期間ぶん・%d件）</h2>
-%s
-</div></html>""" % (esc(name), esc(name), esc(now), nav, len(plat["sources"]),
-                    "".join(rows), len(evs),
-                    "".join(blocks) or "<p class='hint'>この期間に変更は見つかっていません。</p>")
-        doc = doc.replace("__CSS__", CSS)
-        with open(os.path.join(SITE, "p-%s.html" % pid), "w", encoding="utf-8") as f:
-            f.write(doc)
 
 
 def write_report(results, history, now):
@@ -1028,7 +814,107 @@ def write_report(results, history, now):
     doc = """<!doctype html><html lang="ja"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>プラットフォーム変更ウォッチ</title>
-<style>__CSS__</style>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--line:#e3e6ea;--tx:#1c1e21;--sub:#6b7280;
+ --news:#2563eb;--rule:#7c3aed;--app:#059669;--ui:#d97706;--red:#d94a3d}
+*{box-sizing:border-box}
+body{font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;margin:0;
+ background:var(--bg);color:var(--tx);line-height:1.7}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 20px 80px}
+h1{font-size:22px;margin:0 0 4px}
+.time{color:var(--sub);font-size:13px;margin:0 0 20px}
+.banner{border-radius:12px;padding:18px 22px;font-size:16px;margin-bottom:22px}
+.banner span{display:block;font-size:13px;opacity:.8;margin-top:2px}
+.banner.hit{background:#fff1f0;border:1px solid #f3c9c4;color:#a52a1f}
+.banner.mid{background:#fff8e8;border:1px solid #ecd9a8;color:#8a6100}
+.banner.ok{background:#eef7f0;border:1px solid #cbe5d3;color:#256b3d}
+.banner b{font-size:24px}
+.tiles{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-bottom:12px}
+.tile{background:var(--card);border:1px solid var(--line);border-top:4px solid #cbd5e1;
+ border-radius:12px;padding:14px 16px}
+.tile.todo{border-top-color:var(--red)}
+.tile.fyi{border-top-color:var(--ui)}
+.tile.ok{border-top-color:#34a853}
+.tile.err{border-top-color:#b8860b}
+.tile h3{margin:0;font-size:16px}
+.tstate{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;
+ padding:2px 10px;margin:6px 0 8px;background:#eef1f5;color:#4b5563}
+.tile.todo .tstate{background:#fdeaea;color:#a52a1f}
+.tile.fyi .tstate{background:#fdf1de;color:#8a6100}
+.tile.ok .tstate{background:#e8f5ec;color:#256b3d}
+ul.tlist{list-style:none;margin:0;padding:0}
+ul.tlist li{font-size:13px;padding:3px 0}
+ul.tlist a{color:var(--tx);text-decoration:none}
+ul.tlist a:hover{text-decoration:underline}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%%;margin-right:7px}
+.dot.news{background:var(--news)}.dot.rule{background:var(--rule)}
+.dot.app{background:var(--app)}.dot.ui{background:var(--ui)}
+.tnone{margin:0;font-size:13px;color:var(--sub)}
+h2{font-size:15px;color:var(--sub);font-weight:600;margin:34px 0 12px}
+h2.plathead{font-size:19px;color:var(--tx);border-bottom:2px solid var(--line);
+ padding-bottom:8px;margin-top:40px}
+.sechead{font-size:14px;margin:18px 0 10px;color:var(--sub);font-weight:600}
+.sechead.todo{color:#a52a1f;border-left:5px solid var(--red);padding-left:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+ margin-bottom:16px;overflow:hidden;scroll-margin-top:20px}
+.card header{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+ padding:14px 18px;border-bottom:1px solid var(--line);background:#fbfcfd}
+.card h3{font-size:16px;margin:0;flex:1}
+.flag{font-size:12px;font-weight:700;border-radius:5px;padding:3px 10px}
+.flag.todo{background:var(--red);color:#fff}
+.flag.fyi{background:#e9ecf1;color:#5b6472}
+.badge{font-size:12px;font-weight:700;color:#fff;border-radius:5px;padding:3px 9px}
+.badge.news{background:var(--news)}.badge.rule{background:var(--rule)}
+.badge.app{background:var(--app)}.badge.ui{background:var(--ui)}
+.src{font-size:13px;color:#fff;background:var(--news);text-decoration:none;
+ border-radius:6px;padding:5px 12px;white-space:nowrap}
+.src:hover{opacity:.85}
+.tlink{color:var(--tx);text-decoration:none}
+.tlink:hover{text-decoration:underline}
+.golink{margin:12px 0 0}
+.golink a{display:inline-block;font-size:13px;color:var(--news);text-decoration:none;
+ border:1px solid #c7d7f0;background:#f2f7ff;border-radius:8px;padding:7px 14px}
+.golink a:hover{background:#e6f0ff}
+.body{padding:16px 18px}
+ul.news{list-style:none;margin:0;padding:0}
+ul.news li{padding:8px 0;border-bottom:1px dashed var(--line);display:flex;gap:10px;
+ align-items:baseline;flex-wrap:wrap}
+ul.news li:last-child{border:0}
+.date{color:var(--sub);font-size:13px;font-variant-numeric:tabular-nums}
+.cat{font-size:11px;background:#eef1f5;color:#4b5563;border-radius:4px;padding:1px 7px}
+ul.news a{color:var(--tx);text-decoration:none;border-bottom:1px solid #cbd5e1}
+.ln{margin:4px 0;padding:8px 12px;border-radius:8px;font-size:14px}
+.ln.add{background:#eaf7ee;border-left:4px solid #34a853}
+.ln.del{background:#fdeeee;border-left:4px solid #ea4335;text-decoration:line-through;color:#7a3b38}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:12px}
+.shots figure{margin:0}
+.shots figcaption{font-size:12px;color:var(--sub);margin-bottom:6px}
+.shots img{width:100%%;border:1px solid var(--line);border-radius:8px;display:block}
+.hint{font-size:12px;color:var(--sub);margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;
+ padding:6px 14px;font-size:13px;color:var(--sub);text-decoration:none;display:inline-block}
+a.chip:hover{border-color:var(--news);color:var(--news)}
+.chip small{display:block;font-size:11px;color:#9aa1ab}
+.errs{background:#fffaf0;border:1px solid #f0dfb8;border-radius:10px;padding:12px 16px;
+ font-size:13px;color:#8a6100;margin-bottom:16px}
+details summary{cursor:pointer;font-size:14px;color:var(--sub);margin-bottom:10px}
+.hday{margin-bottom:14px}
+.hday b{font-size:13px;color:var(--sub)}
+.hday ul{list-style:none;margin:6px 0 0;padding:0}
+.hday li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 12px;
+ margin-bottom:6px;font-size:14px}
+.hday li a{color:var(--tx);text-decoration:none;border-bottom:1px solid #cbd5e1}
+.hday li a:hover{color:var(--news);border-color:var(--news)}
+.tag{font-size:11px;background:#eef1f5;border-radius:4px;padding:2px 7px;margin-right:8px;color:#4b5563}
+.sub{display:block;font-size:12px;color:var(--sub);margin-top:2px}
+@media(max-width:700px){.shots{grid-template-columns:1fr}}
+.picker{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 14px;
+ margin-bottom:18px;font-size:14px}
+.picker select{font-size:14px;padding:4px 8px;border:1px solid var(--line);border-radius:6px;
+ margin-left:6px;background:#fff}
+.pn{font-size:12px;color:var(--sub);margin-left:10px}
+</style>
 <div class="wrap">
 <h1>プラットフォーム変更ウォッチ</h1>
 <p class="time">最終チェック %s</p>
@@ -1043,15 +929,12 @@ def write_report(results, history, now):
 </div></html>""" % (esc(now), picker, banner, "".join(tiles), "".join(details),
                     len(quiet_all), "".join(quiet_all),
                     "".join(hrows) or "<p class='hint'>まだありません</p>")
-    doc = doc.replace("__CSS__", CSS)
     with open(os.path.join(SITE, day + ".html"), "w", encoding="utf-8") as f:
         f.write(doc)
     with open(REPORT, "w", encoding="utf-8") as f:
         f.write(doc)
     prune_site()
-    kept = site_days()[:KEEP_DAYS]
-    refresh_pickers(kept)
-    write_platform_pages(history, results, kept, now)
+    refresh_pickers(site_days()[:KEEP_DAYS])
 
 
 if __name__ == "__main__":

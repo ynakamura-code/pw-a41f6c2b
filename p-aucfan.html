@@ -1,8 +1,7 @@
 <!doctype html><html lang="ja"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>プラットフォーム変更ウォッチ</title>
-<style>
-:root{--bg:#f6f7f9;--card:#fff;--line:#e3e6ea;--tx:#1c1e21;--sub:#6b7280;
+<title>オークファン の変更履歴｜プラットフォーム変更ウォッチ</title>
+<style>:root{--bg:#f6f7f9;--card:#fff;--line:#e3e6ea;--tx:#1c1e21;--sub:#6b7280;
  --news:#2563eb;--rule:#7c3aed;--app:#059669;--ui:#d97706;--red:#d94a3d}
 *{box-sizing:border-box}
 body{font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;margin:0;
@@ -33,7 +32,7 @@ ul.tlist{list-style:none;margin:0;padding:0}
 ul.tlist li{font-size:13px;padding:3px 0}
 ul.tlist a{color:var(--tx);text-decoration:none}
 ul.tlist a:hover{text-decoration:underline}
-.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%%;margin-right:7px}
 .dot.news{background:var(--news)}.dot.rule{background:var(--rule)}
 .dot.app{background:var(--app)}.dot.ui{background:var(--ui)}
 .tnone{margin:0;font-size:13px;color:var(--sub)}
@@ -76,7 +75,7 @@ ul.news a{color:var(--tx);text-decoration:none;border-bottom:1px solid #cbd5e1}
 .shots{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:12px}
 .shots figure{margin:0}
 .shots figcaption{font-size:12px;color:var(--sub);margin-bottom:6px}
-.shots img{width:100%;border:1px solid var(--line);border-radius:8px;display:block}
+.shots img{width:100%%;border:1px solid var(--line);border-radius:8px;display:block}
 .hint{font-size:12px;color:var(--sub);margin:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{background:#fff;border:1px solid var(--line);border-radius:999px;
@@ -101,16 +100,25 @@ details summary{cursor:pointer;font-size:14px;color:var(--sub);margin-bottom:10p
 .picker select{font-size:14px;padding:4px 8px;border:1px solid var(--line);border-radius:6px;
  margin-left:6px;background:#fff}
 .pn{font-size:12px;color:var(--sub);margin-left:10px}
-</style>
+.prow2{margin-top:8px;padding-top:8px;border-top:1px solid var(--line);font-size:13px;color:var(--sub)}
+.plink{display:inline-block;margin:3px 6px 3px 0;padding:3px 10px;background:#f2f4f7;
+ border:1px solid var(--line);border-radius:999px;color:var(--tx);text-decoration:none;font-size:13px}
+.plink:hover{background:#e8edf5;border-color:#c7d2e0}
+.plink.on{background:#1c1e21;color:#fff;border-color:#1c1e21}
+.srclist{list-style:none;padding:0;margin:0}
+.srclist li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin-bottom:6px}
+.srclist a{color:var(--tx)}
+.evday{margin:0 0 18px}
+.evday>b{font-size:13px;color:var(--sub)}
+.ev{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:8px 0}
+.ev h3{font-size:15px;margin:0 0 6px}
+.back{font-size:13px;color:var(--sub);text-decoration:none}</style>
 <div class="wrap">
-<h1>プラットフォーム変更ウォッチ</h1>
-<p class="time">最終チェック 2026-08-31 12:44</p>
-<div class='picker'><div class='prow'>見る日付 <select onchange="location.href=this.value"><option value='2026-09-04.html'>2026-09-04（最新）</option><option value='2026-09-01.html'>2026-09-01</option><option value='2026-08-31.html' selected>2026-08-31</option></select><span class='pn'>3日分を保存しています（最大90日）</span></div><div class='prow2'>プラットフォーム別にまとめて見る： <a class='plink' href='p-mercari.html'>メルカリ</a> <a class='plink' href='p-ebay.html'>eBay</a> <a class='plink' href='p-amazon.html'>Amazon（出品サービス）</a> <a class='plink' href='p-yahuoku.html'>ヤフオク!</a> <a class='plink' href='p-buyma.html'>BUYMA</a> <a class='plink' href='p-coupang.html'>Coupang（クーパン）</a> <a class='plink' href='p-smartstore.html'>スマートストア（NAVER）</a> <a class='plink' href='p-elevenst.html'>11번가（11st）</a> <a class='plink' href='p-payoneer.html'>Payoneer（ペイオニア）</a> <a class='plink' href='p-worldfirst.html'>WorldFirst（ワールドファースト）</a> <a class='plink' href='p-paypal.html'>PayPal（ペイパル）</a> <a class='plink' href='p-keepa.html'>Keepa</a> <a class='plink' href='p-sellersprite.html'>セラースプライト</a> <a class='plink' href='p-aucfan.html'>オークファン</a></div></div>
-<div class='banner ok'>変更はありませんでした<span>1 のプラットフォームすべてで、マニュアルの修正は不要です</span></div>
-<div class="tiles"><div class='tile ok'><h3>メルカリ</h3><span class='tstate'>変更なし</span><p class='tnone'>見た 11 か所すべて変わっていません</p></div></div>
-
-<h2>変更がなかったところ</h2>
-<details open><summary>すべて見る（11 か所）— クリックで公式ページへ</summary><div class="chips"><a class='chip' href='https://jp-news.mercari.com/info' target='_blank'>メルカリ / 公式お知らせ（メルカリびより） ↗<small>変更なし</small></a><a class='chip' href='https://static.jp.mercari.com/tos' target='_blank'>メルカリ / 利用規約 ↗<small>変更なし</small></a><a class='chip' href='https://help.jp.mercari.com/guide/articles/259/' target='_blank'>メルカリ / 禁止されている出品物 ↗<small>変更なし</small></a><a class='chip' href='https://help.jp.mercari.com/guide/articles/258/' target='_blank'>メルカリ / 禁止されている行為 ↗<small>変更なし</small></a><a class='chip' href='https://apps.apple.com/jp/app/%E3%83%95%E3%83%AA%E3%83%9E%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AF%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA-%E3%83%A1%E3%83%AB%E3%83%9A%E3%82%A4%E3%81%AE%E3%82%B9%E3%83%9E%E3%83%9B%E6%B1%BA%E6%B8%88%E3%81%A7%E3%82%82%E3%81%A3%E3%81%A8%E3%81%8A%E5%BE%97/id667861049?uo=4' target='_blank'>メルカリ / iOSアプリの更新 ↗<small>現在 5.218.0（2026-08-24 公開）</small></a><a class='chip' href='https://help.jp.mercari.com/guide/articles/62/' target='_blank'>メルカリ / 出品までの流れ・売り方 ↗<small>変更なし</small></a><a class='chip' href='https://help.jp.mercari.com/guide/articles/63/' target='_blank'>メルカリ / 商品が売れた後の流れ ↗<small>変更なし</small></a><a class='chip' href='https://help.jp.mercari.com/guide/articles/123/' target='_blank'>メルカリ / らくらくメルカリ便の利用方法 ↗<small>変更なし</small></a><a class='chip' href='https://help.jp.mercari.com/guide/articles/1080/' target='_blank'>メルカリ / 配送方法 早わかり表 ↗<small>変更なし</small></a><a class='chip' href='https://jp.mercari.com/' target='_blank'>メルカリ / Web画面の作り（トップ） ↗<small>部品 13 種類を監視中</small></a><a class='chip' href='https://jp.mercari.com/search?keyword=%E6%9C%AC' target='_blank'>メルカリ / Web画面の作り（検索結果） ↗<small>部品 16 種類を監視中</small></a></div></details>
-<h2>これまでに見つかった変更</h2>
-<p class='hint'>まだありません</p>
+<h1>オークファン の変更履歴</h1>
+<p class="time">最終チェック 2026-09-04 12:35</p>
+<div class='picker'><div class='prow'><a class='back' href='index.html'>← 最新のレポートに戻る</a><span class='pn'>3日分を保存しています（最大90日）</span></div><div class='prow2'>プラットフォーム別： <a class='plink' href='p-mercari.html'>メルカリ</a> <a class='plink' href='p-ebay.html'>eBay</a> <a class='plink' href='p-amazon.html'>Amazon（出品サービス）</a> <a class='plink' href='p-yahuoku.html'>ヤフオク!</a> <a class='plink' href='p-buyma.html'>BUYMA</a> <a class='plink' href='p-coupang.html'>Coupang（クーパン）</a> <a class='plink' href='p-smartstore.html'>スマートストア（NAVER）</a> <a class='plink' href='p-elevenst.html'>11번가（11st）</a> <a class='plink' href='p-payoneer.html'>Payoneer（ペイオニア）</a> <a class='plink' href='p-worldfirst.html'>WorldFirst（ワールドファースト）</a> <a class='plink' href='p-paypal.html'>PayPal（ペイパル）</a> <a class='plink' href='p-keepa.html'>Keepa</a> <a class='plink' href='p-sellersprite.html'>セラースプライト</a> <a class='plink on' href='p-aucfan.html'>オークファン</a></div></div>
+<h2>いま見ているページ（1 か所）</h2>
+<ul class="srclist"><li><span class='tag'>規約・ルール</span><a href='https://aucfan.com/static/user/pro/product/' target='_blank'>オークファンプロPlus（機能・料金） ↗</a><span class='sub'>変更なし</span></li></ul>
+<h2>見つかった変更（保存している期間ぶん・0件）</h2>
+<p class='hint'>この期間に変更は見つかっていません。</p>
 </div></html>
