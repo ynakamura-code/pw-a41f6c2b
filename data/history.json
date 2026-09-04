@@ -1,5 +1,36 @@
 [
  {
+  "source": "news",
+  "label": "公式お知らせ（メルカリびより）",
+  "kind": "news",
+  "url": "https://jp-news.mercari.com/info",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [],
+  "items": [
+   {
+    "title": "【みんなのメルカリ】本人確認はなぜ大事？〜メルカリの取引の79%は、本人確認済み",
+    "url": "https://jp-news.mercari.com/info/54427",
+    "date": "2026-09-04",
+    "cat": "安全に使うために"
+   },
+   {
+    "title": "9/12(土)オリックス・バファローズ「mercari day 〜いっしょに盛り上げるデー！〜」開催！",
+    "url": "https://jp-news.mercari.com/info/55202",
+    "date": "2026-09-03",
+    "cat": "キャンペーン・お得情報"
+   }
+  ],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-04 09:30"
+ },
+ {
   "source": "app_ios",
   "label": "iOSアプリの更新",
   "kind": "appstore",
