@@ -1,12 +1,57 @@
 {
-  "id": "amazon", "name": "Amazon（出品サービス）", "order": 3,
+  "id": "amazon",
+  "name": "Amazon（出品サービス）",
+  "order": 3,
   "sources": [
-    {"id": "pricing", "label": "出品料金・手数料", "kind": "text",
-     "url": "https://sell.amazon.co.jp/pricing",
-     "need": "料金",
-     "clip": {"start": "料金プラン"},
-     "ignore": ["今すぐチェック", "キャンペーン", "割引"]},
-    {"id": "app_seller_ios", "label": "Amazon Sellerアプリの更新", "kind": "appstore",
-     "app_id": "794141485", "country": "jp"}
+    {
+      "id": "pricing",
+      "label": "出品料金・手数料",
+      "kind": "text",
+      "url": "https://sell.amazon.co.jp/pricing",
+      "need": "料金",
+      "clip": {
+        "start": "料金プラン"
+      },
+      "ignore": [
+        "今すぐチェック",
+        "キャンペーン",
+        "割引"
+      ]
+    },
+    {
+      "id": "referral_fees",
+      "label": "カテゴリー別の販売手数料",
+      "kind": "text",
+      "url": "https://sell.amazon.co.jp/grow/promotions/referral-fees",
+      "need": "販売手数料",
+      "clip": {
+        "start": "販売手数料"
+      },
+      "ignore": [
+        "今すぐチェック",
+        "割引"
+      ]
+    },
+    {
+      "id": "fee_estimate",
+      "label": "手数料と費用の見積もり（FBA費用など）",
+      "kind": "text",
+      "url": "https://sell.amazon.co.jp/pricing/estimate",
+      "need": "手数料",
+      "clip": {
+        "start": "手数料"
+      },
+      "ignore": [
+        "今すぐチェック",
+        "割引"
+      ]
+    },
+    {
+      "id": "app_seller_ios",
+      "label": "Amazon Sellerアプリの更新",
+      "kind": "appstore",
+      "app_id": "794141485",
+      "country": "jp"
+    }
   ]
 }
