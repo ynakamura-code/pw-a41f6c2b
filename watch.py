@@ -67,10 +67,18 @@ def fetch_dom(url, tries=3):
     raise RuntimeError("ページを取得できませんでした（%s）: %s" % (last, url))
 
 
-def fetch_json(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.loads(r.read().decode("utf-8"))
+def fetch_json(url, tries=3):
+    last = None
+    for i in range(tries):
+        if i:
+            time.sleep(4 * i)
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.loads(r.read().decode("utf-8"))
+        except Exception as e:
+            last = e
+    raise RuntimeError("取得できませんでした（%s）: %s" % (last, url))
 
 
 def shot_dir(pid):
@@ -486,6 +494,7 @@ def run(only=None, shots=True, send=True):
         print("== %s ==" % plat["name"])
         for src in plat["sources"]:
             try:
+                time.sleep(1)   # 相手のサーバーに負担をかけないよう少し間をあける
                 ev = check_source(plat["id"], src)
                 ev.update({"platform": plat["id"], "platform_name": plat["name"], "checked_at": now})
                 state = "初回登録" if ev["first_run"] else ("変更あり" if ev["changed"] else "変更なし")
