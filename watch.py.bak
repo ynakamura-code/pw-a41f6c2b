@@ -528,34 +528,6 @@ def site_days():
     return sorted(set(ds), reverse=True)
 
 
-PICKER_RE = re.compile(r"<div class='picker'>.*?</div>", re.S)
-
-
-def build_picker(days, cur):
-    """日付プルダウンの HTML を作る。days は新しい順。"""
-    opts = "".join("<option value='%s.html'%s>%s%s</option>"
-                   % (esc(d), " selected" if d == cur else "", esc(d),
-                      "（最新）" if d == days[0] else "")
-                   for d in days)
-    return ("<div class='picker'>見る日付 <select onchange=\"location.href=this.value\">%s</select>"
-            "<span class='pn'>%d日分を保存しています（最大%d日）</span></div>"
-            % (opts, len(days), KEEP_DAYS))
-
-
-def refresh_pickers(days):
-    """過去のページのプルダウンも、今ある日付すべてに差し替える。"""
-    for d in days:
-        path = os.path.join(SITE, d + ".html")
-        if not os.path.exists(path):
-            continue
-        with open(path, encoding="utf-8") as f:
-            doc = f.read()
-        doc2 = PICKER_RE.sub(lambda m: build_picker(days, d), doc, count=1)
-        if doc2 != doc:
-            with open(path, "w", encoding="utf-8") as f:
-                f.write(doc2)
-
-
 def prune_site():
     keep = site_days()[:KEEP_DAYS]
     for f in glob.glob(os.path.join(SITE, "20*.html")):
@@ -687,9 +659,9 @@ def write_report(results, history, now):
     for h in history[:60]:
         hist.setdefault(h["checked_at"][:10], []).append(h)
     hrows = []
-    for hday in sorted(hist, reverse=True):
-        hrows.append("<div class='hday'><b>%s</b><ul>" % esc(hday))
-        for h in hist[hday]:
+    for day in sorted(hist, reverse=True):
+        hrows.append("<div class='hday'><b>%s</b><ul>" % esc(day))
+        for h in hist[day]:
             label = KIND.get(h["kind"], (h["kind"],))[0]
             first = ""
             if h.get("items"):
@@ -705,8 +677,13 @@ def write_report(results, history, now):
                          % (esc(label), title, esc(first[:100])))
         hrows.append("</ul></div>")
 
-    days = sorted(set(site_days() + [day]), reverse=True)[:KEEP_DAYS]
-    picker = build_picker(days, day)
+    days = sorted(set(site_days() + [day]), reverse=True)
+    opts = "".join("<option value='%s.html'%s>%s%s</option>"
+                   % (esc(d), " selected" if d == day else "", esc(d),
+                      "（最新）" if d == days[0] else "")
+                   for d in days)
+    picker = ("<div class='picker'>見る日付 <select onchange=\"location.href=this.value\">%s</select>"
+              "<span class='pn'>過去%d日分を保存しています</span></div>" % (opts, len(days)))
 
     doc = """<!doctype html><html lang="ja"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -831,7 +808,6 @@ details summary{cursor:pointer;font-size:14px;color:var(--sub);margin-bottom:10p
     with open(REPORT, "w", encoding="utf-8") as f:
         f.write(doc)
     prune_site()
-    refresh_pickers(site_days()[:KEEP_DAYS])
 
 
 if __name__ == "__main__":
