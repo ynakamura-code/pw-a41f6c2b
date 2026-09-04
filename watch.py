@@ -15,6 +15,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 import urllib.request
 from datetime import datetime, timezone, timedelta
 
@@ -35,16 +36,35 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 KEEP_SHOTS = 8
 UI_BIG = 5   # 画面の部品がこの数以上入れ替わったら「大幅な変更」とみなす
 
+# どのサイトでも毎回変わるだけで意味のない行（IDや残り時間など）は比べない
+COMMON_IGNORE = [
+    r"^[0-9]{6,}$",                                   # 長い数字だけの行（セッション番号）
+    r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-",         # UUID
+    r"^\s*$",
+    r"^(Copyright|\u00a9)",
+]
+
 
 # ---------- 取得 ----------
 
-def fetch_dom(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "ja,en;q=0.8"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        dom = r.read().decode("utf-8", "replace")
-    if len(dom) < 500:
-        raise RuntimeError("ページを取得できませんでした: " + url)
-    return dom
+def fetch_dom(url, tries=3):
+    """ページを取る。失敗したら少し待って取り直す（一時的な混雑やbot判定よけ）。"""
+    last = None
+    for i in range(tries):
+        if i:
+            time.sleep(4 * i)
+        try:
+            req = urllib.request.Request(
+                url, headers={"User-Agent": UA, "Accept-Language": "ja,en;q=0.8",
+                              "Accept": "text/html,application/xhtml+xml,*/*;q=0.8"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                dom = r.read().decode("utf-8", "replace")
+            if len(dom) < 500:
+                raise RuntimeError("中身がほとんど空でした")
+            return dom
+        except Exception as e:
+            last = e
+    raise RuntimeError("ページを取得できませんでした（%s）: %s" % (last, url))
 
 
 def fetch_json(url):
@@ -146,6 +166,37 @@ def to_links(dom, pattern):
     return items
 
 
+def prepare_text(dom, src):
+    """規約・料金ページの本文だけを取り出す。
+
+    clip  : {"start": 正規表現, "end": 正規表現} 見出しから見出しまでを切り出す
+    ignore: 正規表現の配列。毎回変わるだけの行（IDや広告）を捨てる
+    need  : この文字が本文になければ取得失敗とみなす（ログイン画面・認証画面よけ）
+    """
+    lines = to_text(dom)
+    clip = src.get("clip") or {}
+    if clip.get("start"):
+        rx = re.compile(clip["start"])
+        for i, ln in enumerate(lines):
+            if rx.search(ln):
+                lines = lines[i:]
+                break
+    if clip.get("end"):
+        rx = re.compile(clip["end"])
+        for i, ln in enumerate(lines):
+            if i and rx.search(ln):
+                lines = lines[:i]
+                break
+    ig = [re.compile(x) for x in src.get("ignore", [])] + [re.compile(x) for x in COMMON_IGNORE]
+    lines = [ln for ln in lines if not any(r.search(ln) for r in ig)]
+    need = src.get("need")
+    if need and not any(need in ln for ln in lines):
+        raise RuntimeError("いつもの本文が見つかりません（ログイン画面や認証画面の可能性）: %s" % need)
+    if len(lines) < 5:
+        raise RuntimeError("本文がほとんど取れませんでした")
+    return lines
+
+
 # ---------- 比較 ----------
 
 def snap_path(pid, sid):
@@ -197,7 +248,7 @@ def check_source(pid, src, shot=None):
         save_snap(pid, sid, {"items": items})
 
     elif kind == "text":
-        lines = to_text(fetch_dom(src["url"]))
+        lines = prepare_text(fetch_dom(src["url"]), src)
         if prev:
             added, removed = diff_lines(prev["lines"], lines)
             if added or removed:

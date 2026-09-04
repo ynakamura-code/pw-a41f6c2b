@@ -1,0 +1,15 @@
+{
+  "id": "smartstore", "name": "スマートストア（NAVER）", "order": 7,
+  "sources": [
+    {"id": "help", "label": "販売者ヘルプセンター（目次の変更＝機能変更の目印）", "kind": "text",
+     "url": "https://help.sell.smartstore.naver.com/index.help",
+     "need": "스마트스토어",
+     "clip": {"start": "스마트스토어"}},
+    {"id": "naver_terms", "label": "NAVER 利用規約", "kind": "text",
+     "url": "https://policy.naver.com/rules/service.html",
+     "need": "이용약관",
+     "clip": {"start": "이용약관"}},
+    {"id": "app_seller_ios", "label": "스마트스토어센터アプリの更新", "kind": "appstore",
+     "app_id": "1527200611", "country": "kr"}
+  ]
+}

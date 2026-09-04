@@ -1,0 +1,17 @@
+{
+  "id": "yahuoku", "name": "ヤフオク!", "order": 4,
+  "sources": [
+    {"id": "fee", "label": "ご利用料金（落札システム利用料など）", "kind": "text",
+     "url": "https://auctions.yahoo.co.jp/guide/guide/fee.html",
+     "need": "落札システム利用料"},
+    {"id": "notice_function", "label": "機能追加・変更のお知らせ", "kind": "text",
+     "url": "https://auctions.yahoo.co.jp/topic/notice/function/",
+     "need": "機能追加/変更",
+     "clip": {"start": "機能追加/変更一覧"}},
+    {"id": "store_price", "label": "ストア（法人出店）の料金プラン", "kind": "text",
+     "url": "https://auctions.yahoo.co.jp/store/business/price/index.html",
+     "need": "料金"},
+    {"id": "app_ios", "label": "ヤフオク!アプリの更新", "kind": "appstore",
+     "app_id": "356968629", "country": "jp"}
+  ]
+}

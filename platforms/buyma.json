@@ -1,0 +1,41 @@
+{
+  "id": "buyma",
+  "name": "BUYMA",
+  "order": 5,
+  "sources": [
+    {
+      "id": "rule",
+      "label": "利用規約",
+      "kind": "text",
+      "url": "https://www.buyma.com/contents/rule/",
+      "need": "規約"
+    },
+    {
+      "id": "rule_ps",
+      "label": "パーソナルショッパー（出品者）規約",
+      "kind": "text",
+      "url": "https://www.buyma.com/contents/rule/rule_ps.html",
+      "need": "パーソナルショッパー",
+      "clip": {
+        "start": "パーソナルショッパー"
+      }
+    },
+    {
+      "id": "sell_guide",
+      "label": "出品・販売についてのガイド",
+      "kind": "text",
+      "url": "https://qa.buyma.com/sell/",
+      "need": "出品",
+      "clip": {
+        "start": "出品・販売について"
+      }
+    },
+    {
+      "id": "app_ios",
+      "label": "BUYMAアプリの更新",
+      "kind": "appstore",
+      "app_id": "824042539",
+      "country": "jp"
+    }
+  ]
+}

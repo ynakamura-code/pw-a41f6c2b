@@ -1,0 +1,17 @@
+{
+  "id": "worldfirst",
+  "name": "WorldFirst（ワールドファースト）",
+  "order": 10,
+  "sources": [
+    {
+      "id": "legal",
+      "label": "規約・ポリシー一覧（グローバル）",
+      "kind": "text",
+      "url": "https://www.worldfirst.com/global/legal/",
+      "need": "Terms",
+      "clip": {
+        "start": "Legal"
+      }
+    }
+  ]
+}

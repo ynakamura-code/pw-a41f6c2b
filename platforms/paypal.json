@@ -1,0 +1,18 @@
+{
+  "id": "paypal", "name": "PayPal（ペイパル）", "order": 11,
+  "sources": [
+    {"id": "upcoming", "label": "規約変更の事前告知（ポリシーの更新）", "kind": "text",
+     "url": "https://www.paypal.com/jp/legalhub/paypal/upcoming-policies-full",
+     "need": "ポリシーの更新",
+     "clip": {"start": "ポリシーの更新"}},
+    {"id": "legalhub", "label": "規約一覧（リーガルセンター）", "kind": "text",
+     "url": "https://www.paypal.com/jp/legalhub/paypal/home",
+     "need": "規約"},
+    {"id": "business_fees", "label": "ビジネスアカウントの手数料", "kind": "text",
+     "url": "https://www.paypal.com/jp/business/paypal-business-fees",
+     "need": "手数料",
+     "clip": {"start": "手数料"}},
+    {"id": "app_ios", "label": "PayPalアプリの更新", "kind": "appstore",
+     "app_id": "283646709", "country": "jp"}
+  ]
+}

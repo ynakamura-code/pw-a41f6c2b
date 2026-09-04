@@ -1,0 +1,31 @@
+{
+  "id": "payoneer",
+  "name": "Payoneer（ペイオニア）",
+  "order": 9,
+  "sources": [
+    {
+      "id": "legal",
+      "label": "規約・ポリシー一覧",
+      "kind": "text",
+      "url": "https://www.payoneer.com/ja/legal/",
+      "need": "Payoneer"
+    },
+    {
+      "id": "pricing",
+      "label": "手数料",
+      "kind": "text",
+      "url": "https://www.payoneer.com/ja/about/pricing/",
+      "need": "手数料",
+      "clip": {
+        "start": "手数料"
+      }
+    },
+    {
+      "id": "app_ios",
+      "label": "Payoneerアプリの更新",
+      "kind": "appstore",
+      "app_id": "663338402",
+      "country": "us"
+    }
+  ]
+}

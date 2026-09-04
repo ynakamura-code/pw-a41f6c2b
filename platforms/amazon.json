@@ -1,0 +1,12 @@
+{
+  "id": "amazon", "name": "Amazon（出品サービス）", "order": 3,
+  "sources": [
+    {"id": "pricing", "label": "出品料金・手数料", "kind": "text",
+     "url": "https://sell.amazon.co.jp/pricing",
+     "need": "料金",
+     "clip": {"start": "料金プラン"},
+     "ignore": ["今すぐチェック", "キャンペーン", "割引"]},
+    {"id": "app_seller_ios", "label": "Amazon Sellerアプリの更新", "kind": "appstore",
+     "app_id": "794141485", "country": "jp"}
+  ]
+}

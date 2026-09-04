@@ -1,5 +1,125 @@
 [
  {
+  "source": "ship_table",
+  "label": "配送方法 早わかり表",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/1080/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [
+   "© Mercari, Inc."
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-04 11:14"
+ },
+ {
+  "source": "ship_rakuraku",
+  "label": "らくらくメルカリ便の利用方法",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/123/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [
+   "© Mercari, Inc."
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-04 11:14"
+ },
+ {
+  "source": "flow_after_sold",
+  "label": "商品が売れた後の流れ",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/63/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [
+   "© Mercari, Inc."
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-04 11:14"
+ },
+ {
+  "source": "flow_sell",
+  "label": "出品までの流れ・売り方",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/62/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [
+   "© Mercari, Inc."
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-04 11:14"
+ },
+ {
+  "source": "prohibited_acts",
+  "label": "禁止されている行為",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/258/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [
+   "© Mercari, Inc."
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-04 11:14"
+ },
+ {
+  "source": "prohibited_items",
+  "label": "禁止されている出品物",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/259/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [
+   "© Mercari, Inc."
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-04 11:14"
+ },
+ {
   "source": "news",
   "label": "公式お知らせ（メルカリびより）",
   "kind": "news",

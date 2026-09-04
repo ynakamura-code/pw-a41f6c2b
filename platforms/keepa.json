@@ -1,0 +1,12 @@
+{
+  "id": "keepa", "name": "Keepa", "order": 12,
+  "sources": [
+    {"id": "chrome_ext", "label": "Chrome拡張機能のバージョン・説明", "kind": "text",
+     "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+     "need": "Keepa",
+     "clip": {"start": "Keepa"},
+     "ignore": ["ユーザー$", "^[0-9,]+$", "件のレビュー", "ユーザー数"]},
+    {"id": "app_ios", "label": "Keepaアプリの更新", "kind": "appstore",
+     "app_id": "1518541385", "country": "us"}
+  ]
+}

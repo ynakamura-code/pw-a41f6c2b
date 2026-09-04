@@ -1,0 +1,14 @@
+{
+  "id": "coupang", "name": "Coupang（クーパン）", "order": 6,
+  "sources": [
+    {"id": "faq", "label": "出店・手数料のよくある質問", "kind": "text",
+     "url": "https://marketplace.coupang.com/faq",
+     "need": "수수료",
+     "clip": {"start": "자주 묻는 질문"}},
+    {"id": "marketplace", "label": "出店案内（マーケットプレイス）", "kind": "text",
+     "url": "https://marketplace.coupang.com/",
+     "need": "쿠팡"},
+    {"id": "app_seller_ios", "label": "쿠팡 윙（出品者アプリ）の更新", "kind": "appstore",
+     "app_id": "1569143887", "country": "kr"}
+  ]
+}

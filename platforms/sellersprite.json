@@ -1,0 +1,17 @@
+{
+  "id": "sellersprite",
+  "name": "セラースプライト",
+  "order": 13,
+  "sources": [
+    {
+      "id": "price",
+      "label": "料金プラン",
+      "kind": "text",
+      "url": "https://www.sellersprite.com/jp/price",
+      "need": "料金",
+      "clip": {
+        "start": "料金"
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "ebay",
+  "name": "eBay",
+  "order": 2,
+  "sources": [
+    {
+      "id": "agreement",
+      "label": "利用規約（User Agreement）",
+      "kind": "text",
+      "url": "https://www.ebay.com/help/policies/member-behaviour-policies/user-agreement?id=4259",
+      "need": "1. Introduction",
+      "clip": {
+        "start": "^このページ$",
+        "end": "^この記事は役に立ちましたか"
+      },
+      "ignore": [
+        "\\| eBay [0-9]{6,}",
+        "rlogid",
+        "^[0-9]+ ?(分|min)の記事$",
+        "こんにちは"
+      ]
+    },
+    {
+      "id": "fees",
+      "label": "出品料・落札手数料",
+      "kind": "text",
+      "url": "https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822",
+      "need": "基本出品料",
+      "clip": {
+        "start": "^このページ$",
+        "end": "^この記事は役に立ちましたか"
+      },
+      "ignore": [
+        "\\| eBay [0-9]{6,}",
+        "rlogid",
+        "^[0-9]+ ?(分|min)の記事$"
+      ]
+    },
+    {
+      "id": "seller_updates",
+      "label": "セラーアップデート（仕様変更の告知）",
+      "kind": "text",
+      "url": "https://www.ebay.com/sellercenter/resources/seller-updates",
+      "need": "Seller Update",
+      "clip": {
+        "start": "Seller Update"
+      },
+      "ignore": [
+        "こんにちは",
+        "^[0-9]+ ?(分|min)の記事$"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "aucfan",
+  "name": "オークファン",
+  "order": 14,
+  "sources": [
+    {
+      "id": "pro",
+      "label": "オークファンプロPlus（機能・料金）",
+      "kind": "text",
+      "url": "https://aucfan.com/static/user/pro/product/",
+      "need": "オークファン",
+      "clip": {
+        "start": "オークファンプロPlus"
+      }
+    }
+  ]
+}

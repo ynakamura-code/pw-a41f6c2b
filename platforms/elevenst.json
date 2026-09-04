@@ -1,0 +1,7 @@
+{
+  "id": "elevenst", "name": "11번가（11st）", "order": 8,
+  "sources": [
+    {"id": "app_seller_ios", "label": "11번가 셀러오피스アプリの更新", "kind": "appstore",
+     "app_id": "462123260", "country": "kr"}
+  ]
+}
