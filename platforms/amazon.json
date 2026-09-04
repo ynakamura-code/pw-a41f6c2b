@@ -4,6 +4,30 @@
   "order": 3,
   "sources": [
     {
+      "id": "bsa",
+      "label": "出品規約（Amazonサービスビジネスソリューション契約）",
+      "kind": "amazonhelp",
+      "guid": "G1791"
+    },
+    {
+      "id": "program_policy",
+      "label": "プログラムポリシー",
+      "kind": "amazonhelp",
+      "guid": "521"
+    },
+    {
+      "id": "restricted",
+      "label": "制限対象商品（出品禁止商品）",
+      "kind": "amazonhelp",
+      "guid": "200164330"
+    },
+    {
+      "id": "prohibited_acts",
+      "label": "出品者の禁止活動および行為",
+      "kind": "amazonhelp",
+      "guid": "G200386250"
+    },
+    {
       "id": "pricing",
       "label": "出品料金・手数料",
       "kind": "text",

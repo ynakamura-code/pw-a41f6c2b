@@ -205,6 +205,37 @@ def prepare_text(dom, src):
     return lines
 
 
+AMAZON_HELP_API = "https://sellercentral.amazon.co.jp/help/hub/mons-api/GetHelpTopic"
+
+
+def amazon_help(guid):
+    """セラーセントラルの規約ページ。画面はJavaScriptで作られていて素のHTMLには本文がないので、
+    画面が裏で呼んでいるAPIを直接たたく。ログインは不要。"""
+    body = json.dumps({"guid": guid, "locale": "ja-JP",
+                       "statuses": ["Live"], "consistentRead": False}).encode()
+    ref = "https://sellercentral.amazon.co.jp/help/hub/reference/external/" + guid
+    last = None
+    for i in range(3):
+        if i:
+            time.sleep(4 * i)
+        try:
+            req = urllib.request.Request(
+                AMAZON_HELP_API, data=body,
+                headers={"User-Agent": UA, "Content-Type": "application/json;charset=UTF-8",
+                         "Accept": "application/json, text/plain, */*",
+                         "Origin": "https://sellercentral.amazon.co.jp", "Referer": ref})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                d = json.loads(r.read().decode("utf-8"))
+            topic = d.get("topic") or {}
+            lines = to_text(topic.get("content", ""))
+            if len(lines) < 5:
+                raise RuntimeError("本文がほとんど取れませんでした")
+            return topic.get("title", ""), lines
+        except Exception as e:
+            last = e
+    raise RuntimeError("Amazonの規約を取得できませんでした（%s）: %s" % (last, guid))
+
+
 # ---------- 比較 ----------
 
 def snap_path(pid, sid):
@@ -257,6 +288,17 @@ def check_source(pid, src, shot=None):
 
     elif kind == "text":
         lines = prepare_text(fetch_dom(src["url"]), src)
+        if prev:
+            added, removed = diff_lines(prev["lines"], lines)
+            if added or removed:
+                ev["changed"] = True
+                ev["added"], ev["removed"] = added, removed
+        save_snap(pid, sid, {"lines": lines})
+
+    elif kind == "amazonhelp":
+        title, lines = amazon_help(src["guid"])
+        ev["url"] = "https://sellercentral.amazon.co.jp/help/hub/reference/external/" + src["guid"]
+        ev["note"] = title
         if prev:
             added, removed = diff_lines(prev["lines"], lines)
             if added or removed:
@@ -521,6 +563,7 @@ def run(only=None, shots=True, send=True):
 
 
 KIND = {"news": ("お知らせ", "news"), "text": ("規約・ルール", "rule"),
+        "amazonhelp": ("規約・ルール", "rule"),
         "appstore": ("アプリ更新", "app"), "ui": ("画面（UI）", "ui")}
 
 
@@ -530,7 +573,7 @@ MANUAL_WORDS = ("規約", "ガイド", "禁止", "ルール", "手数料", "本�
 
 def impact_of(r):
     """マニュアル修正が要りそうかを判定する。要りそうなら True。"""
-    if r["kind"] == "text":
+    if r["kind"] in ("text", "amazonhelp"):
         return True
     if r["kind"] == "ui":
         return bool(r.get("ui_big"))
