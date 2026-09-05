@@ -1,5 +1,123 @@
 [
  {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "4.7 ( 5123 件の評価",
+   "5123 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "removed": [
+   "4.7 ( 5122 件の評価",
+   "5122 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-09-05 09:45"
+ },
+ {
+  "source": "help",
+  "label": "販売者ヘルプセンター（目次の変更＝機能変更の目印）",
+  "kind": "text",
+  "url": "https://help.sell.smartstore.naver.com/index.help",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "일반",
+   "PC메인 쇼핑블록(핫아이템,포커스템,브랜드샵) 보장형 광고 종료 및 ADVoost 쇼핑 및 쇼핑검색광고 성과형 전환 사전 안내",
+   "2026.09.04"
+  ],
+  "removed": [
+   "2026.09.01",
+   "일반",
+   "[N배송] 새벽배송 서비스 운영 정책 변경 안내 (네이버플러스 멤버십 회원 전용 제공)"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "smartstore",
+  "platform_name": "スマートストア（NAVER）",
+  "checked_at": "2026-09-05 09:45"
+ },
+ {
+  "source": "rule_ps",
+  "label": "パーソナルショッパー（出品者）規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/rule_ps.html",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "NICKEL HOUSE Donkeyフーディ",
+   "OLEND オナ ソフトバッグ",
+   "2万円以下のパーティドレス",
+   "SWAROVSKI 人気のリング",
+   "GAP パーカー・フーディ",
+   "THEAIRTOWN ナポレオンジャケット",
+   "ALO Yoga ヘアアクセサリー"
+  ],
+  "removed": [
+   "PRADA 折りたたみミニバッグ",
+   "MONCLERアウター SALEアイテム",
+   "HERMES 人気アクセサリー",
+   "ILLIGO パーカージップアップ",
+   "adidas ローバレエシューズ",
+   "ALO Yoga スーツアップパンツ",
+   "OPEN YY 人気のトップス"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-05 09:45"
+ },
+ {
+  "source": "rule",
+  "label": "利用規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "NICKEL HOUSE Donkeyフーディ",
+   "OLEND オナ ソフトバッグ",
+   "2万円以下のパーティドレス",
+   "SWAROVSKI 人気のリング",
+   "GAP パーカー・フーディ",
+   "THEAIRTOWN ナポレオンジャケット",
+   "ALO Yoga ヘアアクセサリー"
+  ],
+  "removed": [
+   "PRADA 折りたたみミニバッグ",
+   "MONCLERアウター SALEアイテム",
+   "HERMES 人気アクセサリー",
+   "ILLIGO パーカージップアップ",
+   "adidas ローバレエシューズ",
+   "ALO Yoga スーツアップパンツ",
+   "OPEN YY 人気のトップス"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-05 09:45"
+ },
+ {
   "source": "news",
   "label": "公式お知らせ（メルカリびより）",
   "kind": "news",
