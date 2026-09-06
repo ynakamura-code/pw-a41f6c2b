@@ -8,6 +8,28 @@
   "changed": true,
   "first_run": false,
   "added": [
+   "2026年8月22日"
+  ],
+  "removed": [
+   "2026年8月23日"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-09-06 09:48"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
    "4.7 ( 5123 件の評価",
    "5123 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
    "楽天価格推移 price2alert",
