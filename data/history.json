@@ -8,6 +8,30 @@
   "changed": true,
   "first_run": false,
   "added": [
+   "4.7 ( 5124 件の評価",
+   "5124 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "removed": [
+   "4.7 ( 5123 件の評価",
+   "5123 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-09-07 09:45"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
    "4.7 ( 5123 件の評価",
    "5123 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
   ],
