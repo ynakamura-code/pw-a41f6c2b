@@ -8,6 +8,255 @@
   "changed": true,
   "first_run": false,
   "added": [
+   "Amazopen - Right Click Search",
+   "3.4",
+   "平均評価: 3.4 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "Search the selected text on amazon when you right-click.",
+   "Amazopen - Right Click Search",
+   "3.4",
+   "平均評価: 3.4 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "Search the selected text on amazon when you right-click."
+  ],
+  "removed": [
+   "How Many? – Amazon Inventory Checker",
+   "3.4",
+   "平均評価: 3.4 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "See what inventory is really available on Amazon — by seller, by region, by day.",
+   "How Many? – Amazon Inventory Checker",
+   "3.4",
+   "平均評価: 3.4 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "See what inventory is really available on Amazon — by seller, by region, by day."
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-09-08 09:48"
+ },
+ {
+  "source": "app_ios",
+  "label": "PayPalアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/jp/app/paypal/id283646709?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 10.0.1 → 10.2.0",
+   "更新内容: ホーム画面から、お客さまのポイントにアクセスできるようになりました。   \n今すぐ購入して、お支払いは後で。 PayPalでは、米国のお客さま向けに短期定期請求サービスのご提供を開始しました。\nPayPalでは、ご購入を行わなくても本人確認ができるセキュリティレイヤーを追加しました。\nお支払いをシンプルに。お気に入りのポイントカードをPayPalに追加すると、お支払いをさらにスピーディーにご利用いただけます。"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 10.2.0（2026-09-07 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "paypal",
+  "platform_name": "PayPal（ペイパル）",
+  "checked_at": "2026-09-08 09:48"
+ },
+ {
+  "source": "app_ios",
+  "label": "Payoneerアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/us/app/payoneer-business-payments/id663338402?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 8.6.6 → 8.7.0",
+   "更新内容: With our latest update, paying someone is now one simple, guided flow. Choose who to pay, set the amount, review, and send, then share your confirmation. You can pay a saved contact or add a new one, and schedule payments for whenever you need them."
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 8.7.0（2026-09-08 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "payoneer",
+  "platform_name": "Payoneer（ペイオニア）",
+  "checked_at": "2026-09-08 09:48"
+ },
+ {
+  "source": "help",
+  "label": "販売者ヘルプセンター（目次の変更＝機能変更の目印）",
+  "kind": "text",
+  "url": "https://help.sell.smartstore.naver.com/index.help",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "매뉴얼",
+   "타겟 세그먼트 생성/관리 메뉴 이용 가이드",
+   "2026.09.07",
+   "위해정보",
+   "[BioloMix 브랜드 BioloMix Bread Maker 가정용 제빵기 일부 제품 리콜 사항]",
+   "2026.09.07"
+  ],
+  "removed": [
+   "2026.09.01",
+   "위해정보",
+   "[유통사 Adaptive Health의 NUGENIX TOTAL-T 기타 영양보충제 일부 제품 리콜 사항]",
+   "2026.09.01",
+   "위해정보",
+   "[제조사 EVLUTION NUTRITION의 EVL VITAMODE VITAMIN&MINERAL REPLENISHMENT 기타 영양보충제 일부 제품 리콜 사항]"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "smartstore",
+  "platform_name": "スマートストア（NAVER）",
+  "checked_at": "2026-09-08 09:48"
+ },
+ {
+  "source": "rule_ps",
+  "label": "パーソナルショッパー（出品者）規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/rule_ps.html",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "新作パーカー 続々入荷",
+   "クロムハーツ 中古アクセ",
+   "アークテリクス 新作バッグ"
+  ],
+  "removed": [
+   "激安ジルサンダー Tシャツ",
+   "すぐに届くTシャツ 2万円以下",
+   "夏でも被りやすいビーニー"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-08 09:48"
+ },
+ {
+  "source": "rule",
+  "label": "利用規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "新作パーカー 続々入荷",
+   "クロムハーツ 中古アクセ",
+   "アークテリクス 新作バッグ"
+  ],
+  "removed": [
+   "激安ジルサンダー Tシャツ",
+   "すぐに届くTシャツ 2万円以下",
+   "夏でも被りやすいビーニー"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-08 09:48"
+ },
+ {
+  "source": "notice_function",
+  "label": "機能追加・変更のお知らせ",
+  "kind": "text",
+  "url": "https://auctions.yahoo.co.jp/topic/notice/function/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "2026/09/07",
+   "機能追加/変更",
+   "検索結果ページのデザインが変更になります",
+   "2026/09/07",
+   "機能追加/変更",
+   "トレーディングカードの出品・検索項目を追加します",
+   "機能追加/変更（294）",
+   "障害報告（386）",
+   "メンテナンス（339）",
+   "検索結果ページのデザインが変更になります",
+   "トレーディングカードの出品・検索項目を追加します",
+   "2026年9月（6）"
+  ],
+  "removed": [
+   "機能追加/変更（292）",
+   "障害報告（385）",
+   "メンテナンス（336）",
+   "【再掲】取引ナビの画面、機能の一部変更について",
+   "下書きの仕様変更について"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "yahuoku",
+  "platform_name": "ヤフオク!",
+  "checked_at": "2026-09-08 09:48"
+ },
+ {
+  "source": "app_ios",
+  "label": "iOSアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/jp/app/%E3%83%95%E3%83%AA%E3%83%9E%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AF%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA-%E3%83%A1%E3%83%AB%E3%83%9A%E3%82%A4%E3%81%AE%E3%82%B9%E3%83%9E%E3%83%9B%E6%B1%BA%E6%B8%88%E3%81%A7%E3%82%82%E3%81%A3%E3%81%A8%E3%81%8A%E5%BE%97/id667861049?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 5.219.0 → 5.220.0",
+   "更新内容: 一部不具合の修正とパフォーマンスの改善を行いました。最新バージョンへのアップデートをお願いします。"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 5.220.0（2026-09-07 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-08 09:48"
+ },
+ {
+  "source": "news",
+  "label": "公式お知らせ（メルカリびより）",
+  "kind": "news",
+  "url": "https://jp-news.mercari.com/info",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [],
+  "items": [
+   {
+    "title": "あんしん鑑定の対象トレーディングカードに「ロルカナ」が追加されました",
+    "url": "https://jp-news.mercari.com/info/55114",
+    "date": "2026-09-07",
+    "cat": "安全に使うために"
+   }
+  ],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-08 09:48"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
    "4.7 ( 5124 件の評価",
    "5124 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
    "2026年8月23日"
