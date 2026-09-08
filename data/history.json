@@ -1,5 +1,151 @@
 [
  {
+  "source": "help",
+  "label": "販売者ヘルプセンター（目次の変更＝機能変更の目印）",
+  "kind": "text",
+  "url": "https://help.sell.smartstore.naver.com/index.help",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "매뉴얼",
+   "타겟 세그먼트 생성/관리 메뉴 이용 가이드",
+   "2026.09.07",
+   "위해정보",
+   "[BioloMix 브랜드 BioloMix Bread Maker 가정용 제빵기 일부 제품 리콜 사항]",
+   "2026.09.07"
+  ],
+  "removed": [
+   "2026.09.01",
+   "위해정보",
+   "[유통사 Adaptive Health의 NUGENIX TOTAL-T 기타 영양보충제 일부 제품 리콜 사항]",
+   "2026.09.01",
+   "위해정보",
+   "[제조사 EVLUTION NUTRITION의 EVL VITAMODE VITAMIN&MINERAL REPLENISHMENT 기타 영양보충제 일부 제품 리콜 사항]"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "smartstore",
+  "platform_name": "スマートストア（NAVER）",
+  "checked_at": "2026-09-08 09:30"
+ },
+ {
+  "source": "rule_ps",
+  "label": "パーソナルショッパー（出品者）規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/rule_ps.html",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "新作パーカー 続々入荷",
+   "クロムハーツ 中古アクセ",
+   "アークテリクス 新作バッグ"
+  ],
+  "removed": [
+   "激安ジルサンダー Tシャツ",
+   "すぐに届くTシャツ 2万円以下",
+   "夏でも被りやすいビーニー"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-08 09:30"
+ },
+ {
+  "source": "rule",
+  "label": "利用規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "新作パーカー 続々入荷",
+   "クロムハーツ 中古アクセ",
+   "アークテリクス 新作バッグ"
+  ],
+  "removed": [
+   "激安ジルサンダー Tシャツ",
+   "すぐに届くTシャツ 2万円以下",
+   "夏でも被りやすいビーニー"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-08 09:30"
+ },
+ {
+  "source": "notice_function",
+  "label": "機能追加・変更のお知らせ",
+  "kind": "text",
+  "url": "https://auctions.yahoo.co.jp/topic/notice/function/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "2026/09/07",
+   "機能追加/変更",
+   "検索結果ページのデザインが変更になります",
+   "2026/09/07",
+   "機能追加/変更",
+   "トレーディングカードの出品・検索項目を追加します",
+   "機能追加/変更（294）",
+   "障害報告（386）",
+   "メンテナンス（339）",
+   "検索結果ページのデザインが変更になります",
+   "トレーディングカードの出品・検索項目を追加します",
+   "2026年9月（6）"
+  ],
+  "removed": [
+   "機能追加/変更（292）",
+   "障害報告（385）",
+   "メンテナンス（336）",
+   "【再掲】取引ナビの画面、機能の一部変更について",
+   "下書きの仕様変更について"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "yahuoku",
+  "platform_name": "ヤフオク!",
+  "checked_at": "2026-09-08 09:30"
+ },
+ {
+  "source": "news",
+  "label": "公式お知らせ（メルカリびより）",
+  "kind": "news",
+  "url": "https://jp-news.mercari.com/info",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [],
+  "items": [
+   {
+    "title": "あんしん鑑定の対象トレーディングカードに「ロルカナ」が追加されました",
+    "url": "https://jp-news.mercari.com/info/55114",
+    "date": "2026-09-07",
+    "cat": "安全に使うために"
+   }
+  ],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-08 09:30"
+ },
+ {
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
