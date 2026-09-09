@@ -144,7 +144,8 @@ details summary{cursor:pointer;font-size:14px;color:var(--sub);margin-bottom:10p
 .evday>b{font-size:13px;color:var(--sub)}
 .ev{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:8px 0}
 .ev h3{font-size:15px;margin:0 0 6px}
-.back{font-size:13px;color:var(--sub);text-decoration:none}"""
+.back{font-size:13px;color:var(--sub);text-decoration:none}
+.hbox{margin-top:12px}"""
 
 KEEP_SHOTS = 8
 UI_BIG = 5   # 画面の部品がこの数以上入れ替わったら「大幅な変更」とみなす
@@ -903,7 +904,7 @@ def write_platform_pages(history, results, days, now):
 <h2>いま見ているページ（%d か所）</h2>
 <ul class="srclist">%s</ul>
 <h2>見つかった変更（保存している期間ぶん・%d件）</h2>
-%s
+<details><summary>すべて見る — クリックで開きます</summary><div class="hbox">%s</div></details>
 </div></html>""" % (esc(name), esc(name), esc(now), nav, len(plat["sources"]),
                     "".join(rows), len(evs),
                     "".join(blocks) or "<p class='hint'>この期間に変更は見つかっていません。</p>")
@@ -1033,6 +1034,7 @@ def write_report(results, history, now):
     for h in history[:60]:
         hist.setdefault(h["checked_at"][:10], []).append(h)
     hrows = []
+    hcount = sum(len(v) for v in hist.values())
     for hday in sorted(hist, reverse=True):
         hrows.append("<div class='hday'><b>%s</b><ul>" % esc(hday))
         for h in hist[hday]:
@@ -1068,9 +1070,9 @@ def write_report(results, history, now):
 <h2>変更がなかったところ</h2>
 <details open><summary>すべて見る（%d か所）— クリックで公式ページへ</summary><div class="chips">%s</div></details>
 <h2>これまでに見つかった変更</h2>
-%s
+<details><summary>すべて見る（%d 件）— クリックで開きます</summary><div class="hbox">%s</div></details>
 </div></html>""" % (esc(now), picker, banner, "".join(tiles), "".join(details),
-                    len(quiet_all), "".join(quiet_all),
+                    len(quiet_all), "".join(quiet_all), hcount,
                     "".join(hrows) or "<p class='hint'>まだありません</p>")
     doc = doc.replace("__CSS__", CSS)
     with open(os.path.join(SITE, day + ".html"), "w", encoding="utf-8") as f:
