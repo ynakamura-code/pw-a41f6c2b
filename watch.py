@@ -685,8 +685,37 @@ MANUAL_WORDS = ("規約", "ガイド", "禁止", "ルール", "手数料", "本�
                 "廃止", "終了", "開始", "出品", "配送", "梱包", "支払", "振込", "売上")
 
 
+# バージョン番号・日付・件数だけの行。ここだけが変わった変更は「参考」に落とす。
+VERSION_LINE = re.compile(
+    r"^(バージョン\s*)?[vV]?[0-9]+(\.[0-9]+)*\s*(→|->)?\s*[vV]?[0-9]*(\.[0-9]+)*$"
+    r"|^[0-9]{4}[-/年][0-9]{1,2}[-/月][0-9]{1,2}日?$"
+    r"|^[0-9,]+\s*(ユーザー|件|人)?$"
+    r"|^(更新日|最終更新|公開日|Updated|Last updated)[:：]?\s*.*$")
+
+
+def only_version_change(r):
+    """変わったのがバージョン番号や日付だけかどうか。"""
+    lines = [x.strip() for x in (r.get("added") or []) + (r.get("removed") or [])]
+    lines = [x for x in lines if x]
+    return bool(lines) and all(VERSION_LINE.match(x) for x in lines)
+
+
+def spec_words_in(r):
+    """変更の中に、出品者の作業が変わりそうな言葉が入っているか。"""
+    text = " ".join((r.get("added") or []) + (r.get("removed") or []) + [r.get("note", "")])
+    for i in r.get("items", []):
+        text += " " + i.get("title", "") + " " + i.get("cat", "")
+    return any(w in text for w in MANUAL_WORDS)
+
+
 def impact_of(r):
     """マニュアル修正が要りそうかを判定する。要りそうなら True。"""
+    # アプリや拡張機能の「番号が上がっただけ」はマニュアル修正に関係しないので参考扱い。
+    # 更新内容に仕様が変わりそうな言葉があるときだけ要確認にする。
+    if r["kind"] == "appstore":
+        return spec_words_in(r)
+    if only_version_change(r):
+        return False
     if r["kind"] in ("text", "amazonhelp"):
         return True
     if r["kind"] == "ui":
