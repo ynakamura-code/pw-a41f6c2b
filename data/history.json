@@ -1,26 +1,5 @@
 [
  {
-  "source": "app_ios",
-  "label": "Keepaアプリの更新",
-  "kind": "appstore",
-  "url": "https://apps.apple.com/us/app/keepa-price-tracker/id1518541385?uo=4",
-  "notify": true,
-  "changed": true,
-  "first_run": false,
-  "added": [
-   "バージョン 5.0.2 → 5.1.0",
-   "更新内容: We're constantly improving our app to provide the best possible experience for our users. In this update, we've fixed some bugs and made some performance enhancements to make the app even better. If you have any feedback or experience any issues, please let us know by sending an email to info@keepa.com. We're always here to help and appreciate your input!"
-  ],
-  "removed": [],
-  "items": [],
-  "note": "現在 5.1.0（2026-09-08 公開）",
-  "shot_now": "",
-  "shot_prev": "",
-  "platform": "keepa",
-  "platform_name": "Keepa",
-  "checked_at": "2026-09-09 12:57"
- },
- {
   "source": "help",
   "label": "販売者ヘルプセンター（目次の変更＝機能変更の目印）",
   "kind": "text",
@@ -68,7 +47,28 @@
   "shot_prev": "",
   "platform": "smartstore",
   "platform_name": "スマートストア（NAVER）",
-  "checked_at": "2026-09-09 12:57"
+  "checked_at": "2026-09-09 14:22"
+ },
+ {
+  "source": "app_ios",
+  "label": "Keepaアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/us/app/keepa-price-tracker/id1518541385?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 5.0.2 → 5.1.0",
+   "更新内容: We're constantly improving our app to provide the best possible experience for our users. In this update, we've fixed some bugs and made some performance enhancements to make the app even better. If you have any feedback or experience any issues, please let us know by sending an email to info@keepa.com. We're always here to help and appreciate your input!"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 5.1.0（2026-09-08 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-09-09 09:48"
  },
  {
   "source": "chrome_ext",
@@ -93,77 +93,6 @@
   "checked_at": "2026-09-09 09:48"
  },
  {
-  "source": "agreement",
-  "label": "利用規約（User Agreement）",
-  "kind": "text",
-  "url": "https://www.ebay.com/help/policies/member-behaviour-policies/user-agreement?id=4259",
-  "notify": true,
-  "changed": true,
-  "first_run": false,
-  "added": [
-   "Suggested queries",
-   "Suggested queries",
-   "The more details you provide, the better i can understand and assist you,"
-  ],
-  "removed": [
-   "We're sorry, we couldn't find any results that match your search. Please try again.",
-   "To help you find what you’re looking for:",
-   "Try different search terms",
-   "Use more general search terms",
-   "Make sure all words are spelled correctly",
-   "Browse Help Articles"
-  ],
-  "items": [],
-  "note": "",
-  "shot_now": "",
-  "shot_prev": "",
-  "platform": "ebay",
-  "platform_name": "eBay",
-  "checked_at": "2026-09-09 09:48"
- },
- {
-  "source": "app_ios",
-  "label": "PayPalアプリの更新",
-  "kind": "appstore",
-  "url": "https://apps.apple.com/jp/app/paypal/id283646709?uo=4",
-  "notify": true,
-  "changed": true,
-  "first_run": false,
-  "added": [
-   "バージョン 10.0.1 → 10.2.0",
-   "更新内容: ホーム画面から、お客さまのポイントにアクセスできるようになりました。   \n今すぐ購入して、お支払いは後で。 PayPalでは、米国のお客さま向けに短期定期請求サービスのご提供を開始しました。\nPayPalでは、ご購入を行わなくても本人確認ができるセキュリティレイヤーを追加しました。\nお支払いをシンプルに。お気に入りのポイントカードをPayPalに追加すると、お支払いをさらにスピーディーにご利用いただけます。"
-  ],
-  "removed": [],
-  "items": [],
-  "note": "現在 10.2.0（2026-09-07 公開）",
-  "shot_now": "",
-  "shot_prev": "",
-  "platform": "paypal",
-  "platform_name": "PayPal（ペイパル）",
-  "checked_at": "2026-09-09 09:30"
- },
- {
-  "source": "app_ios",
-  "label": "Payoneerアプリの更新",
-  "kind": "appstore",
-  "url": "https://apps.apple.com/us/app/payoneer-business-payments/id663338402?uo=4",
-  "notify": true,
-  "changed": true,
-  "first_run": false,
-  "added": [
-   "バージョン 8.6.6 → 8.7.0",
-   "更新内容: With our latest update, paying someone is now one simple, guided flow. Choose who to pay, set the amount, review, and send, then share your confirmation. You can pay a saved contact or add a new one, and schedule payments for whenever you need them."
-  ],
-  "removed": [],
-  "items": [],
-  "note": "現在 8.7.0（2026-09-08 公開）",
-  "shot_now": "",
-  "shot_prev": "",
-  "platform": "payoneer",
-  "platform_name": "Payoneer（ペイオニア）",
-  "checked_at": "2026-09-09 09:30"
- },
- {
   "source": "marketplace",
   "label": "出店案内（マーケットプレイス）",
   "kind": "text",
@@ -183,7 +112,7 @@
   "shot_prev": "",
   "platform": "coupang",
   "platform_name": "Coupang（クーパン）",
-  "checked_at": "2026-09-09 09:30"
+  "checked_at": "2026-09-09 09:48"
  },
  {
   "source": "prohibited_acts",
@@ -218,28 +147,36 @@
   "shot_prev": "",
   "platform": "amazon",
   "platform_name": "Amazon（出品サービス）",
-  "checked_at": "2026-09-09 09:30"
+  "checked_at": "2026-09-09 09:48"
  },
  {
-  "source": "app_ios",
-  "label": "iOSアプリの更新",
-  "kind": "appstore",
-  "url": "https://apps.apple.com/jp/app/%E3%83%95%E3%83%AA%E3%83%9E%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AF%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA-%E3%83%A1%E3%83%AB%E3%83%9A%E3%82%A4%E3%81%AE%E3%82%B9%E3%83%9E%E3%83%9B%E6%B1%BA%E6%B8%88%E3%81%A7%E3%82%82%E3%81%A3%E3%81%A8%E3%81%8A%E5%BE%97/id667861049?uo=4",
+  "source": "agreement",
+  "label": "利用規約（User Agreement）",
+  "kind": "text",
+  "url": "https://www.ebay.com/help/policies/member-behaviour-policies/user-agreement?id=4259",
   "notify": true,
   "changed": true,
   "first_run": false,
   "added": [
-   "バージョン 5.219.0 → 5.220.0",
-   "更新内容: 一部不具合の修正とパフォーマンスの改善を行いました。最新バージョンへのアップデートをお願いします。"
+   "Suggested queries",
+   "Suggested queries",
+   "The more details you provide, the better i can understand and assist you,"
   ],
-  "removed": [],
+  "removed": [
+   "We're sorry, we couldn't find any results that match your search. Please try again.",
+   "To help you find what you’re looking for:",
+   "Try different search terms",
+   "Use more general search terms",
+   "Make sure all words are spelled correctly",
+   "Browse Help Articles"
+  ],
   "items": [],
-  "note": "現在 5.220.0（2026-09-07 公開）",
+  "note": "",
   "shot_now": "",
   "shot_prev": "",
-  "platform": "mercari",
-  "platform_name": "メルカリ",
-  "checked_at": "2026-09-09 09:30"
+  "platform": "ebay",
+  "platform_name": "eBay",
+  "checked_at": "2026-09-09 09:48"
  },
  {
   "source": "chrome_ext",
@@ -324,27 +261,6 @@
   "checked_at": "2026-09-08 09:48"
  },
  {
-  "source": "app_ios",
-  "label": "iOSアプリの更新",
-  "kind": "appstore",
-  "url": "https://apps.apple.com/jp/app/%E3%83%95%E3%83%AA%E3%83%9E%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AF%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA-%E3%83%A1%E3%83%AB%E3%83%9A%E3%82%A4%E3%81%AE%E3%82%B9%E3%83%9E%E3%83%9B%E6%B1%BA%E6%B8%88%E3%81%A7%E3%82%82%E3%81%A3%E3%81%A8%E3%81%8A%E5%BE%97/id667861049?uo=4",
-  "notify": true,
-  "changed": true,
-  "first_run": false,
-  "added": [
-   "バージョン 5.219.0 → 5.220.0",
-   "更新内容: 一部不具合の修正とパフォーマンスの改善を行いました。最新バージョンへのアップデートをお願いします。"
-  ],
-  "removed": [],
-  "items": [],
-  "note": "現在 5.220.0（2026-09-07 公開）",
-  "shot_now": "",
-  "shot_prev": "",
-  "platform": "mercari",
-  "platform_name": "メルカリ",
-  "checked_at": "2026-09-08 09:48"
- },
- {
   "source": "help",
   "label": "販売者ヘルプセンター（目次の変更＝機能変更の目印）",
   "kind": "text",
@@ -374,7 +290,7 @@
   "shot_prev": "",
   "platform": "smartstore",
   "platform_name": "スマートストア（NAVER）",
-  "checked_at": "2026-09-08 09:30"
+  "checked_at": "2026-09-08 09:48"
  },
  {
   "source": "rule_ps",
@@ -400,7 +316,7 @@
   "shot_prev": "",
   "platform": "buyma",
   "platform_name": "BUYMA",
-  "checked_at": "2026-09-08 09:30"
+  "checked_at": "2026-09-08 09:48"
  },
  {
   "source": "rule",
@@ -426,7 +342,7 @@
   "shot_prev": "",
   "platform": "buyma",
   "platform_name": "BUYMA",
-  "checked_at": "2026-09-08 09:30"
+  "checked_at": "2026-09-08 09:48"
  },
  {
   "source": "notice_function",
@@ -463,7 +379,28 @@
   "shot_prev": "",
   "platform": "yahuoku",
   "platform_name": "ヤフオク!",
-  "checked_at": "2026-09-08 09:30"
+  "checked_at": "2026-09-08 09:48"
+ },
+ {
+  "source": "app_ios",
+  "label": "iOSアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/jp/app/%E3%83%95%E3%83%AA%E3%83%9E%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AF%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA-%E3%83%A1%E3%83%AB%E3%83%9A%E3%82%A4%E3%81%AE%E3%82%B9%E3%83%9E%E3%83%9B%E6%B1%BA%E6%B8%88%E3%81%A7%E3%82%82%E3%81%A3%E3%81%A8%E3%81%8A%E5%BE%97/id667861049?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 5.219.0 → 5.220.0",
+   "更新内容: 一部不具合の修正とパフォーマンスの改善を行いました。最新バージョンへのアップデートをお願いします。"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 5.220.0（2026-09-07 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-08 09:48"
  },
  {
   "source": "news",
@@ -488,7 +425,7 @@
   "shot_prev": "",
   "platform": "mercari",
   "platform_name": "メルカリ",
-  "checked_at": "2026-09-08 09:30"
+  "checked_at": "2026-09-08 09:48"
  },
  {
   "source": "chrome_ext",
@@ -500,11 +437,13 @@
   "first_run": false,
   "added": [
    "4.7 ( 5124 件の評価",
-   "5124 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+   "5124 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "2026年8月23日"
   ],
   "removed": [
    "4.7 ( 5123 件の評価",
-   "5123 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+   "5123 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "2026年8月22日"
   ],
   "items": [],
   "note": "",
@@ -512,7 +451,7 @@
   "shot_prev": "",
   "platform": "keepa",
   "platform_name": "Keepa",
-  "checked_at": "2026-09-07 09:45"
+  "checked_at": "2026-09-07 09:48"
  },
  {
   "source": "chrome_ext",
@@ -546,11 +485,61 @@
   "first_run": false,
   "added": [
    "4.7 ( 5123 件の評価",
-   "5123 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+   "5123 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "楽天価格推移 price2alert",
+   "2.0",
+   "平均評価: 2 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "楽天のサイトに、価格推移グラフと価格が変動したら通知する機能を追加します",
+   "How Many? – Amazon Inventory Checker",
+   "3.4",
+   "平均評価: 3.4 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "See what inventory is really available on Amazon — by seller, by region, by day.",
+   "楽天価格推移 price2alert",
+   "2.0",
+   "平均評価: 2 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "楽天のサイトに、価格推移グラフと価格が変動したら通知する機能を追加します",
+   "How Many? – Amazon Inventory Checker",
+   "3.4",
+   "平均評価: 3.4 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "See what inventory is really available on Amazon — by seller, by region, by day.",
+   "Online Seller Addon",
+   "3.7",
+   "平均評価: 3.7 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "Free stock counter for Amazon sellers with unlimited daily product checks. This extension will show the inventory counts for the…"
   ],
   "removed": [
    "4.7 ( 5122 件の評価",
-   "5122 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+   "5122 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "キーゾンv3",
+   "4.0",
+   "平均評価: 4 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "キーパの月間販売個数を表示する拡張ツール。",
+   "The Amazon ASIN Checker",
+   "4.1",
+   "平均評価: 4.1 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "Are You eligible to sell a particular product on Amazon? Our ASIN Checker will help you make the best business decision.",
+   "Sakura Check Linker",
+   "4.3",
+   "平均評価: 4.3 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "Amazon.co.jpの商品ページのレビューの右にサクラチェッカー(https://sakura-checker.jp/)へのリンクを埋め込みます",
+   "クイックショップ",
+   "4.4",
+   "平均評価: 4.4 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "せどり・転売で活用できるリサーチ簡略化ツール",
+   "Sakura Check Linker",
+   "4.3",
+   "平均評価: 4.3 つ星（5 つ星が最高）",
+   "結果とレビューについて、詳しくはこちらをご覧ください。",
+   "Amazon.co.jpの商品ページのレビューの右にサクラチェッカー(https://sakura-checker.jp/)へのリンクを埋め込みます"
   ],
   "items": [],
   "note": "",
