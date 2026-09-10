@@ -1,5 +1,135 @@
 [
  {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "4.4 ( 531 件の評価",
+   "531 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "removed": [
+   "4.4 ( 530 件の評価",
+   "530 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-09-10 09:46"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "4.7 ( 5125 件の評価",
+   "5125 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "2026年8月23日"
+  ],
+  "removed": [
+   "4.7 ( 5124 件の評価",
+   "5124 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "2026年8月22日"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-09-10 09:46"
+ },
+ {
+  "source": "help",
+  "label": "販売者ヘルプセンター（目次の変更＝機能変更の目印）",
+  "kind": "text",
+  "url": "https://help.sell.smartstore.naver.com/index.help",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "타겟 세그먼트 생성/관리",
+   "마케팅메시지 등록",
+   "마케팅메시지 조회",
+   "시스템",
+   "스마트스토어 시스템 작업 안내 (9/10 새벽3~5:30)",
+   "2026.09.09",
+   "위해정보",
+   "[제조사 Optimum Nutrition, Inc.의 Optimum Nutrition BCAA Boost Grape Burst Flavor 기타 영양보충제 일부 제품 리콜 사항]",
+   "2026.09.09",
+   "위해정보",
+   "[제조사 Nutricost의 nutricost Super Antioxidants 기타 영양보충제 일부 제품 리콜 사항]",
+   "2026.09.09",
+   "위해정보",
+   "[제조사 ALFASIGMA의 CEREFOLIN BRAIN WELLNESS 기타 영양보충제 일부 제품 리콜 사항]",
+   "2026.09.09"
+  ],
+  "removed": [
+   "마케팅 보내기",
+   "마케팅 이력",
+   "마케팅 통계",
+   "AI 마케팅 효과분석",
+   "위해정보",
+   "[BioloMix 브랜드 BioloMix Bread Maker 가정용 제빵기 일부 제품 리콜 사항]",
+   "2026.09.07",
+   "일반",
+   "PC메인 쇼핑블록(핫아이템,포커스템,브랜드샵) 보장형 광고 종료 및 ADVoost 쇼핑 및 쇼핑검색광고 성과형 전환 사전 안내",
+   "2026.09.04",
+   "D-커머스",
+   "[모집] 스마트스토어 판매자를 위한 실전 교육",
+   "2026.09.04",
+   "일반",
+   "통합검색 쇼핑영역 및 쇼핑검색 내 상품 노출 위치 및 개수 최적화 실적용 안내 (지면 확대)",
+   "2026.09.03"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "smartstore",
+  "platform_name": "スマートストア（NAVER）",
+  "checked_at": "2026-09-10 09:46"
+ },
+ {
+  "source": "agreement",
+  "label": "利用規約（User Agreement）",
+  "kind": "text",
+  "url": "https://www.ebay.com/help/policies/member-behaviour-policies/user-agreement?id=4259",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "We're sorry, we couldn't find any results that match your search. Please try again.",
+   "To help you find what you’re looking for:",
+   "Try different search terms",
+   "Use more general search terms",
+   "Make sure all words are spelled correctly",
+   "Browse Help Articles"
+  ],
+  "removed": [
+   "Suggested queries",
+   "Suggested queries",
+   "The more details you provide, the better i can understand and assist you,"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "ebay",
+  "platform_name": "eBay",
+  "checked_at": "2026-09-10 09:46"
+ },
+ {
   "source": "help",
   "label": "販売者ヘルプセンター（目次の変更＝機能変更の目印）",
   "kind": "text",
