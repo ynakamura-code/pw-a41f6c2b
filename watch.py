@@ -161,7 +161,11 @@ COMMON_IGNORE = [
 
 # ---------- 取得 ----------
 
-def fetch_dom(url, tries=3):
+UA_ALT = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 "
+          "(KHTML, like Gecko) Version/17.6 Safari/605.1.15")
+
+
+def fetch_dom(url, tries=3, ua=None):
     """ページを取る。失敗したら少し待って取り直す（一時的な混雑やbot判定よけ）。"""
     last = None
     for i in range(tries):
@@ -169,7 +173,8 @@ def fetch_dom(url, tries=3):
             time.sleep(4 * i)
         try:
             req = urllib.request.Request(
-                url, headers={"User-Agent": UA, "Accept-Language": "ja,en;q=0.8",
+                url, headers={"User-Agent": ua or (UA if i == 0 else UA_ALT),
+                              "Accept-Language": "ja,en;q=0.8",
                               "Accept": "text/html,application/xhtml+xml,*/*;q=0.8"})
             with urllib.request.urlopen(req, timeout=60) as r:
                 dom = r.read().decode("utf-8", "replace")
@@ -350,6 +355,23 @@ def amazon_help(guid):
     raise RuntimeError("Amazonの規約を取得できませんでした（%s）: %s" % (last, guid))
 
 
+def fetch_text_lines(src, tries=3):
+    """本文が取れるまで取り直す。
+
+    ページ自体は 200 で返ってきても、中身が本人確認画面（キャプチャ）のことがある。
+    その場合 prepare_text の need チェックで失敗するので、間を空けてもう一度取りに行く。
+    """
+    last = None
+    for i in range(tries):
+        if i:
+            time.sleep(20 * i)
+        try:
+            return prepare_text(fetch_dom(src["url"], ua=UA if i % 2 == 0 else UA_ALT), src)
+        except Exception as e:
+            last = e
+    raise last
+
+
 # ---------- 比較 ----------
 
 def snap_path(pid, sid):
@@ -401,7 +423,7 @@ def check_source(pid, src, shot=None):
         save_snap(pid, sid, {"items": items})
 
     elif kind == "text":
-        lines = prepare_text(fetch_dom(src["url"]), src)
+        lines = fetch_text_lines(src)
         if prev:
             added, removed = diff_lines(prev["lines"], lines)
             if added or removed:
