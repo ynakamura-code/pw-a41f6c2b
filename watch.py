@@ -317,8 +317,12 @@ def prepare_text(dom, src):
     ig = [re.compile(x) for x in src.get("ignore", [])] + [re.compile(x) for x in COMMON_IGNORE]
     lines = [ln for ln in lines if not any(r.search(ln) for r in ig)]
     need = src.get("need")
-    if need and not any(need in ln for ln in lines):
-        raise RuntimeError("いつもの本文が見つかりません（ログイン画面や認証画面の可能性）: %s" % need)
+    if need:
+        wants = [need] if isinstance(need, str) else list(need)
+        joined = "\n".join(lines)
+        if not any(w in joined for w in wants):
+            raise RuntimeError("いつもの本文が見つかりません（ログイン画面や認証画面の可能性）: %s"
+                               % " / ".join(wants))
     if len(lines) < 5:
         raise RuntimeError("本文がほとんど取れませんでした")
     return lines
@@ -353,6 +357,19 @@ def amazon_help(guid):
         except Exception as e:
             last = e
     raise RuntimeError("Amazonの規約を取得できませんでした（%s）: %s" % (last, guid))
+
+
+def text_lang(lines):
+    """日本語のページか、そうでないかを見分ける。
+
+    eBay は見に行った場所によって日本語版と英語版が返る。言語が違うだけで
+    「全文が入れ替わった」と誤検知するので、言語ごとに別々に記録して比べる。
+    """
+    joined = "".join(lines[:400])
+    if not joined:
+        return "other"
+    jp = len(re.findall(r"[\u3040-\u30ff\u4e00-\u9fff]", joined))
+    return "ja" if jp * 100 >= len(joined) * 3 else "other"
 
 
 def fetch_text_lines(src, tries=3):
@@ -424,12 +441,20 @@ def check_source(pid, src, shot=None):
 
     elif kind == "text":
         lines = fetch_text_lines(src)
-        if prev:
-            added, removed = diff_lines(prev["lines"], lines)
+        lang = text_lang(lines)
+        variants = dict((prev or {}).get("variants") or {})
+        if prev and not variants and prev.get("lines"):
+            variants[text_lang(prev["lines"])] = prev["lines"]
+        old_lines = variants.get(lang)
+        if old_lines:
+            added, removed = diff_lines(old_lines, lines)
             if added or removed:
                 ev["changed"] = True
                 ev["added"], ev["removed"] = added, removed
-        save_snap(pid, sid, {"lines": lines})
+        elif prev:
+            ev["note"] = "ページの言語が切り替わったため、今回は比べていません"
+        variants[lang] = lines
+        save_snap(pid, sid, {"lines": lines, "variants": variants})
 
     elif kind == "amazonhelp":
         title, lines = amazon_help(src["guid"])
