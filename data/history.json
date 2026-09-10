@@ -21,7 +21,7 @@
   "shot_prev": "",
   "platform": "sellersprite",
   "platform_name": "セラースプライト",
-  "checked_at": "2026-09-10 09:46"
+  "checked_at": "2026-09-10 09:55"
  },
  {
   "source": "chrome_ext",
@@ -33,13 +33,11 @@
   "first_run": false,
   "added": [
    "4.7 ( 5125 件の評価",
-   "5125 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
-   "2026年8月23日"
+   "5125 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
   ],
   "removed": [
    "4.7 ( 5124 件の評価",
-   "5124 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
-   "2026年8月22日"
+   "5124 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
   ],
   "items": [],
   "note": "",
@@ -47,7 +45,7 @@
   "shot_prev": "",
   "platform": "keepa",
   "platform_name": "Keepa",
-  "checked_at": "2026-09-10 09:46"
+  "checked_at": "2026-09-10 09:55"
  },
  {
   "source": "help",
@@ -98,36 +96,7 @@
   "shot_prev": "",
   "platform": "smartstore",
   "platform_name": "スマートストア（NAVER）",
-  "checked_at": "2026-09-10 09:46"
- },
- {
-  "source": "agreement",
-  "label": "利用規約（User Agreement）",
-  "kind": "text",
-  "url": "https://www.ebay.com/help/policies/member-behaviour-policies/user-agreement?id=4259",
-  "notify": true,
-  "changed": true,
-  "first_run": false,
-  "added": [
-   "We're sorry, we couldn't find any results that match your search. Please try again.",
-   "To help you find what you’re looking for:",
-   "Try different search terms",
-   "Use more general search terms",
-   "Make sure all words are spelled correctly",
-   "Browse Help Articles"
-  ],
-  "removed": [
-   "Suggested queries",
-   "Suggested queries",
-   "The more details you provide, the better i can understand and assist you,"
-  ],
-  "items": [],
-  "note": "",
-  "shot_now": "",
-  "shot_prev": "",
-  "platform": "ebay",
-  "platform_name": "eBay",
-  "checked_at": "2026-09-10 09:46"
+  "checked_at": "2026-09-10 09:55"
  },
  {
   "source": "help",
