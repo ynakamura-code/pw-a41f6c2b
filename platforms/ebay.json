@@ -13,7 +13,7 @@
         "1. はじめに"
       ],
       "clip": {
-        "start": "^(このページ|Jump to section)$",
+        "start": "^1\\. Introduction$",
         "end": "^(この記事は役に立ちましたか|Was this article helpful)"
       },
       "ignore": [

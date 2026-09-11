@@ -18,9 +18,10 @@
       "label": "機能メニュー一覧（リサーチ機能の追加・名称変更・廃止）",
       "kind": "text",
       "url": "https://www.sellersprite.com/jp/bbs",
-      "need": "セラースプライト",
+      "need": "キーワードリサーチ",
       "clip": {
-        "start": "^トップ$"
+        "start": "^ビッグデータ商品セレクト$",
+        "end": "^ヘルプ記事一覧へ$"
       },
       "ignore": [
         "^[0-9,]+$",
