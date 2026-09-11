@@ -1,5 +1,151 @@
 [
  {
+  "source": "menu",
+  "label": "機能メニュー一覧（リサーチ機能の追加・名称変更・廃止）",
+  "kind": "text",
+  "url": "https://www.sellersprite.com/jp/bbs",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "\\【EC業界情報】週間ニュースまとめ（2026-09-10）/",
+   "2026-09-10",
+   "コメント  0",
+   "いいね",
+   "セラースプライト",
+   "投稿時間 2026-09-03 10:54",
+   "\\【EC業界情報】週間ニュースまとめ（2026-09-03）/",
+   "今週の注目：",
+   "✨Amazon、欧州5カ国のFBA越境貨物の納品ウィンドウを9月1日から7日間に短縮",
+   "✨TikTok Shop日本、初年度GMV約500億円 取引の7割がライブ配信・ショート動画経由",
+   "✨日本で単身世帯経済が台頭、小型・折りたたみ家電が越境セラーの構造的機会に",
+   "各詳しい情報>>>",
+   "https://www.sellersprite.jp/jp/v3/knowledge/article/week-news-20260903"
+  ],
+  "removed": [
+   "\\【EC業界情報】週間ニュースまとめ（2026-09-03）/",
+   "2026-09-03",
+   "いいね",
+   "PP",
+   "投稿時間 2026-08-06 08:05",
+   "レビューのダウンロードをしましたが、★５しかダウンロードができません。",
+   "コメント  1",
+   "いいね",
+   "画像を添付する",
+   "ログイン してから返信しましょう'>",
+   "投稿",
+   "公式",
+   "セラースプライト",
+   "コメント時間",
+   "2026-08-07 10:14",
+   "BEST",
+   "お世話になっております！",
+   "ご質問いただき、ありがとうございます。",
+   "レビューの評価がすべて星5として表示される件につきましては、Amazon側のレビュー表示仕様の変更が影響している可能性がございます。",
+   "現在、一部のレビューはAmazon側で通常表示から除外・非表示となっており、取得できない場合がございます。そのため、レビューをより多く閲覧できるように、「トップレビュー」や「新しい順」などの表示順を切り替えながら取得する方式を採用しております。",
+   "なお、残りのレビューにつきましては、Amazon側で非表示となっているため、現時点ではキーワード検索または絞り込み条件を指定した場合にのみ確認できる状態となっております。この影響により、実際のレビュー総数とダウンロードできる件数、または評価の内訳が一致しない場合がございます。",
+   "ご確認のほどよろしくお願いいたします～！",
+   "返信",
+   "返信をキャンセル"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-09-11 09:45"
+ },
+ {
+  "source": "help",
+  "label": "販売者ヘルプセンター（目次の変更＝機能変更の目印）",
+  "kind": "text",
+  "url": "https://help.sell.smartstore.naver.com/index.help",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "위해정보",
+   "[INTENZE 브랜드 INTENZE Blue Sky 타투 용품 일부 제품 리콜 사항]",
+   "2026.09.10",
+   "위해정보",
+   "[제조사 VITAMATIC의 VITAMATIC METHYL B12 2500MCG, 5000MCG Natural Berry 기타 영양보충제 일부 제품 리콜 사항]",
+   "2026.09.10",
+   "위해정보",
+   "[제조사 Sunergized LLC/Woodbury의 Sunergetic KIDNEY CLEANSE 기타 영양보충제 일부 제품 리콜 사항]",
+   "2026.09.10",
+   "위해정보",
+   "[유통사 Synergy CHC Crop.의 Flat tummy keto acv gummies natural apple flavor 기타 영양보충제 일부 제품 리콜 사항]",
+   "2026.09.10",
+   "일반",
+   "26년 하반기 중소상공인 대상, 우대수수료 환급 안내드립니다. (9/29)",
+   "2026.09.10"
+  ],
+  "removed": [
+   "위해정보",
+   "[제조사 Solaray의 Solaray Vitamin B-Complex 100 기타 영양보충제 일부 제품 리콜 사항]",
+   "2026.09.09",
+   "위해정보",
+   "[유통사 Brainmd의 Brainmd NeuroLink 기타 영양보충제 일부 제품 리콜 사항]",
+   "2026.09.09",
+   "위해정보",
+   "[유통사 Country Farms의 Country Farms Super Reds Mixed Berry 기타 영양보충제 일부 제품 리콜 사항]",
+   "2026.09.09",
+   "위해정보",
+   "[Goywato 브랜드 Goywato Cordless Impact Driver 전기드릴 및 드라이버 일부 제품 리콜 사항]",
+   "2026.09.09",
+   "매뉴얼",
+   "타겟 세그먼트 생성/관리 메뉴 이용 가이드",
+   "2026.09.07"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "smartstore",
+  "platform_name": "スマートストア（NAVER）",
+  "checked_at": "2026-09-11 09:45"
+ },
+ {
+  "source": "agreement",
+  "label": "利用規約（User Agreement）",
+  "kind": "text",
+  "url": "https://www.ebay.com/help/policies/member-behaviour-policies/user-agreement?id=4259",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Suggested queries",
+   "Suggested queries",
+   "The more details you provide, the better i can understand and assist you,"
+  ],
+  "removed": [
+   "We're sorry, we couldn't find any results that match your search. Please try again.",
+   "To help you find what you’re looking for:",
+   "Try different search terms",
+   "Use more general search terms",
+   "Make sure all words are spelled correctly",
+   "Browse Help Articles",
+   "Was this article helpful for you?",
+   "You might also be interested in:",
+   "User Privacy Notice In our User Privacy Notice we have compiled all essential information about our handling of your personal data and your corresponding rights.",
+   "This User Privacy Notice is effective from April 21, 2025 . View the previous User Privacy Notice.",
+   "15 min article",
+   "Cookies, web beacons, and similar technology (\"Cookie Notice\") Our Cookie Notice details all relevant information regarding the use of cookies, web beacons and similar technologies in connection to eBay's websites, applications, services, products and tools (collectively \"Services\") and your choices in this regard.",
+   "13 min article",
+   "Community content policy Sharing content with other eBay members - either via discussion boards, product reviews, collections or groups - is a great way to help build the eBay community, and is something we encourage all our users to do.",
+   "4 min article",
+   "eBay employee trading and community content policy If you're an eBay employee buying and selling on eBay, you have to follow the same rules as all other eBay members. 3 min article"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "ebay",
+  "platform_name": "eBay",
+  "checked_at": "2026-09-11 09:45"
+ },
+ {
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
@@ -21,7 +167,7 @@
   "shot_prev": "",
   "platform": "sellersprite",
   "platform_name": "セラースプライト",
-  "checked_at": "2026-09-10 09:55"
+  "checked_at": "2026-09-10 09:46"
  },
  {
   "source": "chrome_ext",
@@ -33,11 +179,13 @@
   "first_run": false,
   "added": [
    "4.7 ( 5125 件の評価",
-   "5125 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+   "5125 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "2026年8月23日"
   ],
   "removed": [
    "4.7 ( 5124 件の評価",
-   "5124 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+   "5124 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "2026年8月22日"
   ],
   "items": [],
   "note": "",
@@ -45,7 +193,7 @@
   "shot_prev": "",
   "platform": "keepa",
   "platform_name": "Keepa",
-  "checked_at": "2026-09-10 09:55"
+  "checked_at": "2026-09-10 09:46"
  },
  {
   "source": "help",
@@ -96,7 +244,36 @@
   "shot_prev": "",
   "platform": "smartstore",
   "platform_name": "スマートストア（NAVER）",
-  "checked_at": "2026-09-10 09:55"
+  "checked_at": "2026-09-10 09:46"
+ },
+ {
+  "source": "agreement",
+  "label": "利用規約（User Agreement）",
+  "kind": "text",
+  "url": "https://www.ebay.com/help/policies/member-behaviour-policies/user-agreement?id=4259",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "We're sorry, we couldn't find any results that match your search. Please try again.",
+   "To help you find what you’re looking for:",
+   "Try different search terms",
+   "Use more general search terms",
+   "Make sure all words are spelled correctly",
+   "Browse Help Articles"
+  ],
+  "removed": [
+   "Suggested queries",
+   "Suggested queries",
+   "The more details you provide, the better i can understand and assist you,"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "ebay",
+  "platform_name": "eBay",
+  "checked_at": "2026-09-10 09:46"
  },
  {
   "source": "help",
