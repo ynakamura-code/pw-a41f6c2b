@@ -8,6 +8,83 @@
   "changed": true,
   "first_run": false,
   "added": [
+   "2026年8月5日"
+  ],
+  "removed": [
+   "2026年8月4日"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-09-13 14:14"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "4.7 ( 5127 件の評価",
+   "5127 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "2026年8月23日"
+  ],
+  "removed": [
+   "4.7 ( 5125 件の評価",
+   "5125 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "2026年8月22日"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-09-13 14:14"
+ },
+ {
+  "source": "fees",
+  "label": "出品料・落札手数料",
+  "kind": "text",
+  "url": "https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "We're sorry, we couldn't find any results that match your search. Please try again.",
+   "To help you find what you’re looking for:",
+   "Try different search terms",
+   "Use more general search terms",
+   "Make sure all words are spelled correctly",
+   "Browse Help Articles"
+  ],
+  "removed": [
+   "Suggested queries",
+   "Suggested queries",
+   "The more details you provide, the better i can understand and assist you,"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "ebay",
+  "platform_name": "eBay",
+  "checked_at": "2026-09-13 14:14"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
    "2026年8月4日"
   ],
   "removed": [
