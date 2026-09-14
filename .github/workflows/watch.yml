@@ -2,7 +2,8 @@ name: platform-watch
 
 on:
   schedule:
-    - cron: "30 0 * * *"   # 毎日 9:30（日本時間）
+    # 毎時00分・30分ちょうどは世界中の実行が集中して順番待ちになりやすいため、半端な分にしている
+    - cron: "43 0 * * *"   # 毎日 9:43（日本時間）
   workflow_dispatch:        # 手動でも実行できる
 
 permissions:
