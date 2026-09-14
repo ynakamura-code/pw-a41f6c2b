@@ -10,8 +10,6 @@
   "div#tabs",
   "div[combobox]",
   "div[list]",
-  "div[tablist]",
-  "div[tabpanel]",
   "form#chip-search-input"
  ]
 }

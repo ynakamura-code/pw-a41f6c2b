@@ -5,6 +5,8 @@
   "div#chip-group-skeleton",
   "div#filter-heading",
   "div#image-search-button",
+  "div#item-cell-skeleton",
+  "div#item-grid-skeleton",
   "div#list-slot",
   "div#mercari-logo",
   "div#search-autocomplete",
@@ -13,8 +15,6 @@
   "div[list]",
   "form#chip-search-input",
   "input#on-sale-condition-checkbox",
-  "li#item-cell-skeleton",
-  "p#chip-label",
-  "ul#item-grid-skeleton"
+  "p#chip-label"
  ]
 }
