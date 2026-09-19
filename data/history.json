@@ -1,5 +1,194 @@
 [
  {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "2026年8月5日"
+  ],
+  "removed": [
+   "2026年8月4日"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-09-19 14:04"
+ },
+ {
+  "source": "app_ios",
+  "label": "Keepaアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/us/app/keepa-price-tracker/id1518541385?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 6.0.0 → 6.0.1",
+   "更新内容: We're constantly improving our app to provide the best possible experience for our users. In this update, we've fixed some bugs and made some performance enhancements to make the app even better. If you have any feedback or experience any issues, please let us know by sending an email to info@keepa.com. We're always here to help and appreciate your input!"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 6.0.1（2026-09-18 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-09-19 14:04"
+ },
+ {
+  "source": "app_ios",
+  "label": "PayPalアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/jp/app/paypal/id283646709?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 10.3.0 → 10.3.1",
+   "更新内容: ホーム画面から、お客さまのポイントにアクセスできるようになりました。   \n今すぐ購入して、お支払いは後で。 PayPalでは、米国のお客さま向けに短期定期請求サービスのご提供を開始しました。\nPayPalでは、ご購入を行わなくても本人確認ができるセキュリティレイヤーを追加しました。\nお支払いをシンプルに。お気に入りのポイントカードをPayPalに追加すると、お支払いをさらにスピーディーにご利用いただけます。"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 10.3.1（2026-09-17 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "paypal",
+  "platform_name": "PayPal（ペイパル）",
+  "checked_at": "2026-09-19 14:04"
+ },
+ {
+  "source": "business_fees",
+  "label": "ビジネスアカウントの手数料",
+  "kind": "text",
+  "url": "https://www.paypal.com/jp/business/paypal-business-fees",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Explore what PayPal offers in your location. Switch to the United States site."
+  ],
+  "removed": [],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "paypal",
+  "platform_name": "PayPal（ペイパル）",
+  "checked_at": "2026-09-19 14:04"
+ },
+ {
+  "source": "legal",
+  "label": "規約・ポリシー一覧（グローバル）",
+  "kind": "text",
+  "url": "https://www.worldfirst.com/global/legal/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [
+   "Menu"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "worldfirst",
+  "platform_name": "WorldFirst（ワールドファースト）",
+  "checked_at": "2026-09-19 14:04"
+ },
+ {
+  "source": "rule_ps",
+  "label": "パーソナルショッパー（出品者）規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/rule_ps.html",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "UGG 新作シューズ",
+   "adidas Essentialsニットカーディガン",
+   "SALE対象の新作アウター",
+   "SUBU 人気のシューズ",
+   "CAPE HORN 5万円台以下アウター",
+   "New Balance スニーカーローファー"
+  ],
+  "removed": [
+   "NICKEL HOUSE Donkeyフーディ",
+   "スピード配送対象 5万円台以下アウター",
+   "レインブーツ・レインシューズ",
+   "Matin Kim GRAFFITI HOODY",
+   "GAP パーカー・フーディ",
+   "Mackage タイムセール中のアウター"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-19 14:04"
+ },
+ {
+  "source": "rule",
+  "label": "利用規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "UGG 新作シューズ",
+   "adidas Essentialsニットカーディガン",
+   "SALE対象の新作アウター",
+   "SUBU 人気のシューズ",
+   "CAPE HORN 5万円台以下アウター",
+   "New Balance スニーカーローファー"
+  ],
+  "removed": [
+   "NICKEL HOUSE Donkeyフーディ",
+   "スピード配送対象 5万円台以下アウター",
+   "レインブーツ・レインシューズ",
+   "Matin Kim GRAFFITI HOODY",
+   "GAP パーカー・フーディ",
+   "Mackage タイムセール中のアウター"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-19 14:04"
+ },
+ {
+  "source": "app_ios",
+  "label": "iOSアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/jp/app/%E3%83%95%E3%83%AA%E3%83%9E%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AF%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA-%E3%83%A1%E3%83%AB%E3%83%9A%E3%82%A4%E3%81%AE%E3%82%B9%E3%83%9E%E3%83%9B%E6%B1%BA%E6%B8%88%E3%81%A7%E3%82%82%E3%81%A3%E3%81%A8%E3%81%8A%E5%BE%97/id667861049?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 5.221.1 → 5.221.2",
+   "更新内容: 一部不具合の修正とパフォーマンスの改善を行いました。最新バージョンへのアップデートをお願いします。"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 5.221.2（2026-09-17 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-19 14:04"
+ },
+ {
   "source": "news",
   "label": "公式お知らせ（メルカリびより）",
   "kind": "news",
