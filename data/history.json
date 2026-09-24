@@ -1,5 +1,73 @@
 [
  {
+  "source": "business_fees",
+  "label": "ビジネスアカウントの手数料",
+  "kind": "text",
+  "url": "https://www.paypal.com/jp/business/paypal-business-fees",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Explore what PayPal offers in your location. Switch to the United States site."
+  ],
+  "removed": [
+   "Explore what PayPal offers in your location. Switch to the Canada site."
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "paypal",
+  "platform_name": "PayPal（ペイパル）",
+  "checked_at": "2026-09-24 14:26"
+ },
+ {
+  "source": "app_ios",
+  "label": "BUYMAアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/jp/app/buyma-%E3%83%90%E3%82%A4%E3%83%9E-%E6%B5%B7%E5%A4%96%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E9%80%9A%E8%B2%A9%E3%82%A2%E3%83%97%E3%83%AA/id824042539?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 3.99.0 → 3.100.0",
+   "更新内容: アプリを快適にご利用いただくための改修を行いました。\n\nお取引での不明点やアプリの不具合があった際は、マイページの「カスタマーサポートへお問い合わせ」からご連絡いただけますと幸いです。引き続き、BUYMAアプリをよろしくお願いいたします。"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 3.100.0（2026-09-24 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-24 14:26"
+ },
+ {
+  "source": "news",
+  "label": "公式お知らせ（メルカリびより）",
+  "kind": "news",
+  "url": "https://jp-news.mercari.com/info",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [],
+  "items": [
+   {
+    "title": "【9/24(木)〜】事前エントリーで繰り返し使える梱包資材が当たる！「ハッピーメルカリ市」開催決定",
+    "url": "https://jp-news.mercari.com/info/55457",
+    "date": "2026-09-24",
+    "cat": "キャンペーン・お得情報"
+   }
+  ],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-24 14:26"
+ },
+ {
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
