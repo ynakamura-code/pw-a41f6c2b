@@ -2,8 +2,13 @@ name: platform-watch
 
 on:
   schedule:
-    # 毎時00分・30分ちょうどは世界中の実行が集中して順番待ちになりやすいため、半端な分にしている
-    - cron: "43 0 * * *"   # 毎日 9:43（日本時間）
+    # GitHub の無料の定期実行は混むと数時間後回しにされる。9:30〜12:00 の間に必ず1回終わらせたいので、
+    # 40分おきに4回ぶん予約しておき、その日すでに実行済みなら後の回は何もせず終わる（下の「今日はもう実行したか調べる」）。
+    # 毎時00分・30分ちょうどは世界中の実行が集中するため、半端な分にしている。
+    - cron: "22 0 * * *"   # 毎日 9:22（日本時間）
+    - cron: "7 1 * * *"    # 毎日 10:07
+    - cron: "52 1 * * *"   # 毎日 10:52
+    - cron: "37 2 * * *"   # 毎日 11:37
   workflow_dispatch:        # 手動でも実行できる
 
 permissions:
@@ -26,7 +31,20 @@ jobs:
           key: pw-shots-${{ github.run_id }}
           restore-keys: pw-shots-
 
+      - name: 今日はもう実行したか調べる
+        id: guard
+        run: |
+          today=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+          last=$(cat data/last_run 2>/dev/null || echo "")
+          if [ "$last" = "$today" ] && [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "本日（$today）は実行済みのため、今回は何もしません"
+            echo "skip=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=no" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Chrome を用意する
+        if: steps.guard.outputs.skip != 'yes'
         run: |
           if [ -x /usr/bin/google-chrome ]; then
             echo "PW_CHROME=/usr/bin/google-chrome" >> "$GITHUB_ENV"
@@ -37,13 +55,16 @@ jobs:
           fi
 
       - name: チェックを実行する
+        if: steps.guard.outputs.skip != 'yes'
         env:
           PW_SLACK_WEBHOOK: ${{ secrets.PW_SLACK_WEBHOOK }}
           PW_NOPUSH: "1"
         run: python3 watch.py
 
       - name: 結果を公開ページに反映する
+        if: steps.guard.outputs.skip != 'yes'
         run: |
+          TZ=Asia/Tokyo date +%Y-%m-%d > data/last_run
           git config user.name platform-watch
           git config user.email y.nakamura@busoken.com
           git add -A
