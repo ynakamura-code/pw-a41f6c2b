@@ -1,5 +1,84 @@
 [
  {
+  "source": "app_ios",
+  "label": "Keepaアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/us/app/keepa-price-tracker/id1518541385?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 6.0.2 → 6.1.1",
+   "更新内容: We're constantly improving our app to provide the best possible experience for our users. In this update, we've fixed some bugs and made some performance enhancements to make the app even better. If you have any feedback or experience any issues, please let us know by sending an email to info@keepa.com. We're always here to help and appreciate your input!"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 6.1.1（2026-09-25 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-09-26 14:07"
+ },
+ {
+  "source": "flow_sell",
+  "label": "出品までの流れ・売り方",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/62/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "AIからの提案内容は、正確ではない場合があります。",
+   "必ずお客さま自身で生成されたタイトル・商品説明を確認し、必要に応じて修正を行ってください。",
+   "ファッション（上記のカテゴリー以外・衣類系）",
+   "「出品ホーム＞出品した商品」から商品を選択し、商品画面下部の「商品を編集する」をタップする",
+   "ChatGPTでメルカリの出品の下書きを作りたい。",
+   "1. ChatGPTの「Apps」または「Plugins」の一覧から「メルカリ」または「mercari」を検索し、メルカリ公式アプリを選択する",
+   "※画面上の名称は、ChatGPTのバージョンや利用環境によって異なる場合があります",
+   "本機能は、ChatGPTの対応プランで利用できます。プラン、地域、ワークスペースの管理設定などによっては利用できない場合があります。"
+  ],
+  "removed": [
+   "ファッション（上記のカテゴリ以外・衣類系）",
+   "「出品ホーム＞出品した商品」から商品を選択し、商品詳細画面下部の「商品を編集する」をタップする",
+   "ChatGPTでメルカリ内の出品商品を検索したい。",
+   "1. ChatGPTのアプリ一覧（Apps）から「mercari」を検索し、選択する",
+   "本機能は、ChatGPTの対象プラン（ChatGPT Free / Go / Plus / Pro /Business / Enterprise / Eduのいずれか）をご利用のお客さまが「Apps」から追加することで利用できます。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-26 14:07"
+ },
+ {
+  "source": "news",
+  "label": "公式お知らせ（メルカリびより）",
+  "kind": "news",
+  "url": "https://jp-news.mercari.com/info",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [],
+  "items": [
+   {
+    "title": "不審なAndroidアプリに注意！スマートフォンを遠隔操作する手口と対策",
+    "url": "https://jp-news.mercari.com/info/55501",
+    "date": "2026-09-25",
+    "cat": "安全に使うために"
+   }
+  ],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-09-26 14:07"
+ },
+ {
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
