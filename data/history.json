@@ -1,5 +1,49 @@
 [
  {
+  "source": "rule_ps",
+  "label": "パーソナルショッパー（出品者）規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/rule_ps.html",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Bugaboo Stella McCartney"
+  ],
+  "removed": [
+   "Nunaピンクのベビーグッズ"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-27 14:25"
+ },
+ {
+  "source": "rule",
+  "label": "利用規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Bugaboo Stella McCartney"
+  ],
+  "removed": [
+   "Nunaピンクのベビーグッズ"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-27 14:25"
+ },
+ {
   "source": "app_ios",
   "label": "Keepaアプリの更新",
   "kind": "appstore",
