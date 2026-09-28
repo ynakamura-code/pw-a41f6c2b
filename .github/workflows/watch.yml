@@ -2,13 +2,21 @@ name: platform-watch
 
 on:
   schedule:
-    # GitHub の無料の定期実行は混むと数時間後回しにされる。9:30〜12:00 の間に必ず1回終わらせたいので、
-    # 40分おきに4回ぶん予約しておき、その日すでに実行済みなら後の回は何もせず終わる（下の「今日はもう実行したか調べる」）。
-    # 毎時00分・30分ちょうどは世界中の実行が集中するため、半端な分にしている。
-    - cron: "22 0 * * *"   # 毎日 9:22（日本時間）
-    - cron: "7 1 * * *"    # 毎日 10:07
-    - cron: "52 1 * * *"   # 毎日 10:52
-    - cron: "37 2 * * *"   # 毎日 11:37
+    # GitHub の無料の定期実行は、混むと毎日5時間ほど後回しにされる（予約9:22→実際14:25など）。
+    # そこで早朝から予約を並べておき、「日本時間9:30を過ぎた最初の1回」だけが実際の処理をする。
+    # それより早い時刻に動いた回は何もせず終わる（下の「実行してよい時間か調べる」）。
+    - cron: "5 19 * * *"   # 予約 04:05（日本時間）
+    - cron: "45 19 * * *"   # 予約 04:45（日本時間）
+    - cron: "25 20 * * *"   # 予約 05:25（日本時間）
+    - cron: "5 21 * * *"   # 予約 06:05（日本時間）
+    - cron: "45 21 * * *"   # 予約 06:45（日本時間）
+    - cron: "25 22 * * *"   # 予約 07:25（日本時間）
+    - cron: "5 23 * * *"   # 予約 08:05（日本時間）
+    - cron: "45 23 * * *"   # 予約 08:45（日本時間）
+    - cron: "25 0 * * *"   # 予約 09:25（日本時間）
+    - cron: "5 1 * * *"   # 予約 10:05（日本時間）
+    - cron: "45 1 * * *"   # 予約 10:45（日本時間）
+    - cron: "25 2 * * *"   # 予約 11:25（日本時間）
   workflow_dispatch:        # 手動でも実行できる
 
 permissions:
@@ -31,15 +39,23 @@ jobs:
           key: pw-shots-${{ github.run_id }}
           restore-keys: pw-shots-
 
-      - name: 今日はもう実行したか調べる
+      - name: 実行してよい時間か調べる
         id: guard
         run: |
           today=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+          now=$(TZ=Asia/Tokyo date +%H%M)
           last=$(cat data/last_run 2>/dev/null || echo "")
-          if [ "$last" = "$today" ] && [ "${{ github.event_name }}" = "schedule" ]; then
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "手動実行のため、そのまま実行します"
+            echo "skip=no" >> "$GITHUB_OUTPUT"
+          elif [ "$last" = "$today" ]; then
             echo "本日（$today）は実行済みのため、今回は何もしません"
             echo "skip=yes" >> "$GITHUB_OUTPUT"
+          elif [ "$((10#$now))" -lt 930 ]; then
+            echo "まだ日本時間 $now です。9:30 を過ぎるまで実行しません"
+            echo "skip=yes" >> "$GITHUB_OUTPUT"
           else
+            echo "日本時間 $now、本日はまだ未実行のため実行します"
             echo "skip=no" >> "$GITHUB_OUTPUT"
           fi
 
