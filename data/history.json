@@ -8,6 +8,166 @@
   "changed": true,
   "first_run": false,
   "added": [
+   "2026年8月4日"
+  ],
+  "removed": [
+   "2026年8月5日"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-09-29 09:54"
+ },
+ {
+  "source": "app_ios",
+  "label": "PayPalアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/jp/app/paypal/id283646709?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 10.4.0 → 10.5.1",
+   "更新内容: ホーム画面から、お客さまのポイントにアクセスできるようになりました。   \n今すぐ購入して、お支払いは後で。 PayPalでは、米国のお客さま向けに短期定期請求サービスのご提供を開始しました。\nPayPalでは、ご購入を行わなくても本人確認ができるセキュリティレイヤーを追加しました。\nお支払いをシンプルに。お気に入りのポイントカードをPayPalに追加すると、お支払いをさらにスピーディーにご利用いただけます。"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 10.5.1（2026-09-28 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "paypal",
+  "platform_name": "PayPal（ペイパル）",
+  "checked_at": "2026-09-29 09:54"
+ },
+ {
+  "source": "upcoming",
+  "label": "規約変更の事前告知（ポリシーの更新）",
+  "kind": "text",
+  "url": "https://www.paypal.com/jp/legalhub/paypal/upcoming-policies-full",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "最終更新日 2026年9月28日",
+   "発行日: 2026年9月28日",
+   "PayPalプライバシーステートメントの改訂",
+   "2026年9月28日発効:",
+   "明確さと一貫性を向上させるため、プライバシーステートメントを更新しています。更新後の内容には、PayPal Worldおよび第三者のウォレットに関連する個人データの取り扱い方法についての追加情報が含まれています。また、開示当局(Authorities)への情報開示に関するPayPalの義務についての追加情報も含まれています。",
+   "更新されたPayPalプライバシーステートメントを確認する"
+  ],
+  "removed": [
+   "最終更新日 2026年3月31日",
+   "発行日: 2026年3月31日",
+   "PayPalオンラインカード決済サービス規約",
+   "2026年3月31日発効:",
+   "Fastlaneの使用に関連する新しい条件を導入するため、変更を行っています。",
+   "更新されたPayPalオンラインカード決済サービス規約を確認する"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "paypal",
+  "platform_name": "PayPal（ペイパル）",
+  "checked_at": "2026-09-29 09:54"
+ },
+ {
+  "source": "app_ios",
+  "label": "Payoneerアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/us/app/payoneer-business-payments/id663338402?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 8.7.1 → 8.7.5",
+   "更新内容: With our latest update, paying someone is now one simple, guided flow. Choose who to pay, set the amount, review, and send, then share your confirmation. You can pay a saved contact or add a new one, and schedule payments for whenever you need them."
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 8.7.5（2026-09-28 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "payoneer",
+  "platform_name": "Payoneer（ペイオニア）",
+  "checked_at": "2026-09-29 09:54"
+ },
+ {
+  "source": "rule_ps",
+  "label": "パーソナルショッパー（出品者）規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/rule_ps.html",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "スウェット 関税負担なし",
+   "秋冬新作 ショルダーバッグ",
+   "メッシ 代表ラストマッチ ユニフォーム",
+   "半額以下 お得パーカー",
+   "リックオウエンス× ドクターマーチン",
+   "秋冬 現地価格アイテム"
+  ],
+  "removed": [
+   "シュプリーム×ナイキ 新作",
+   "タトラスアウター 今が安い",
+   "すぐに届くスウェット",
+   "ハイブランドベルト おしゃれ",
+   "MM6×サロモン バックパック",
+   "春夏 現地価格アイテム"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-29 09:54"
+ },
+ {
+  "source": "rule",
+  "label": "利用規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "スウェット 関税負担なし",
+   "秋冬新作 ショルダーバッグ",
+   "メッシ 代表ラストマッチ ユニフォーム",
+   "半額以下 お得パーカー",
+   "リックオウエンス× ドクターマーチン",
+   "秋冬 現地価格アイテム"
+  ],
+  "removed": [
+   "シュプリーム×ナイキ 新作",
+   "タトラスアウター 今が安い",
+   "すぐに届くスウェット",
+   "ハイブランドベルト おしゃれ",
+   "MM6×サロモン バックパック",
+   "春夏 現地価格アイテム"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-09-29 09:54"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
    "2026年8月5日"
   ],
   "removed": [
