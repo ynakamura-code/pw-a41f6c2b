@@ -1,5 +1,183 @@
 [
  {
+  "source": "naver_terms",
+  "label": "NAVER 利用規約",
+  "kind": "text",
+  "url": "https://policy.naver.com/rules/service.html",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "시행일자: 2026년 10월 1일",
+   "또한 그 손해가 이용자의 귀책에 의한 경우라도 네이버의 귀책이 경합하는 경우에는 책임비율에 따라 이를 분담할 것입니다.",
+   "다만, 천재지변 또는 이에 준하는 불가항력으로 인하여 네이버가 서비스를 제공할 수 없거나 네이버의 귀책 없이 이용자의 고의 또는 과실로 인하여 서비스를 이용할 수 없어 발생한 손해에 대해서 네이버는 책임을 부담하지 않습니다.",
+   "그리고 네이버가 손해배상책임을 부담하는 경우에도 통상적으로 예견이 불가능하거나 특별한 사정으로 인한 특별 손해 또는 간접 손해, 기타 징벌적 손해에 대해서는 관련 법령에서 정한 범위 내에서 책임을 부담합니다.",
+   "다만, 이에 관하여 네이버의 귀책사유가 있는 경우 책임비율에 따라 책임을 분담합니다.",
+   "여러분에게 변경된 약관의 효력 발생일까지 거부 의사를 표시하지 않으면 변경된 약관을 승인한 것으로 본다는 뜻을 알렸음에도 위 기간이 지나도록 여러분의 의견이 네이버에 접수되지 않으면, 여러분이 변경된 약관에 따라 서비스를 이용하는 데에 동의하는 것으로 간주됩니다.",
+   "2026년 9월 23일",
+   "2026년 10월 1일",
+   "이전 이용약관 보기 (2025년 7월 10일 ~ 2026년 9월 30일 적용)"
+  ],
+  "removed": [
+   "시행일자: 2025년 7월 10일",
+   "다만, 천재지변 또는 이에 준하는 불가항력으로 인하여 네이버가 서비스를 제공할 수 없거나 이용자의 고의 또는 과실로 인하여 서비스를 이용할 수 없어 발생한 손해에 대해서 네이버는 책임을 부담하지 않습니다.",
+   "그리고 네이버가 손해배상책임을 부담하는 경우에도 통상적으로 예견이 불가능하거나 특별한 사정으로 인한 특별 손해 또는 간접 손해, 기타 징벌적 손해에 대해서는 관련 법령에 특별한 규정이 없는 한 책임을 부담하지 않습니다.",
+   "위 기간이 지나도록 여러분의 의견이 네이버에 접수되지 않으면, 여러분이 변경된 약관에 따라 서비스를 이용하는 데에 동의하는 것으로 간주됩니다.",
+   "2025년 7월 3일",
+   "2025년 7월 10일",
+   "이전 이용약관 보기 (2024년 3월 29일 ~ 2025년 7월 9일 적용)"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "smartstore",
+  "platform_name": "スマートストア（NAVER）",
+  "checked_at": "2026-10-02 09:37"
+ },
+ {
+  "source": "sell_guide",
+  "label": "出品・販売についてのガイド",
+  "kind": "text",
+  "url": "https://qa.buyma.com/sell/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "カスタマーハラスメントに関する当社の考え方 ＞"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-10-02 09:37"
+ },
+ {
+  "source": "notice_function",
+  "label": "機能追加・変更のお知らせ",
+  "kind": "text",
+  "url": "https://auctions.yahoo.co.jp/topic/notice/function/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "2026/10/01",
+   "機能追加/変更",
+   "【再掲】日本郵便社の各種基本運賃など（クリックポスト含む）の改定について",
+   "メンテナンス（347）",
+   "【再掲】日本郵便社の各種基本運賃など（クリックポスト含む）の改定について",
+   "2026年10月（1）",
+   "2026年9月（26）",
+   "2026年8月（10）"
+  ],
+  "removed": [
+   "2026/08/28",
+   "機能追加/変更",
+   "日本郵便社の各種基本運賃など（クリックポスト含む）の改定について",
+   "メンテナンス（345）",
+   "日本郵便社の各種基本運賃など（クリックポスト含む）の改定について",
+   "2026年9月（24）",
+   "2026年8月（11）"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "yahuoku",
+  "platform_name": "ヤフオク!",
+  "checked_at": "2026-10-02 09:37"
+ },
+ {
+  "source": "flow_after_sold",
+  "label": "商品が売れた後の流れ",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/63/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "また、より安心で快適にメルカリをご利用いただくための、機能アップデートや取り組みの情報を下記Webサイトよりお届けしています。"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-10-02 09:37"
+ },
+ {
+  "source": "flow_sell",
+  "label": "出品までの流れ・売り方",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/62/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "より安心で快適にメルカリをご利用いただくための、機能アップデートや取り組みの情報を下記Webサイトよりお届けしています。"
+  ],
+  "removed": [
+   "メルカリのあんしん・あんぜんに関する取り組みについては、下記よりご確認いただけます。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-10-02 09:37"
+ },
+ {
+  "source": "prohibited_acts",
+  "label": "禁止されている行為",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/258/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "より安心で快適にメルカリをご利用いただくための、機能アップデートや取り組みの情報を下記Webサイトよりお届けしています。"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-10-02 09:37"
+ },
+ {
+  "source": "news",
+  "label": "公式お知らせ（メルカリびより）",
+  "kind": "news",
+  "url": "https://jp-news.mercari.com/info",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [],
+  "items": [
+   {
+    "title": "【P2,000が当たる】「#メルカリでつなごうキャンペーン」開催！公式Xをフォロー＆リポスト",
+    "url": "https://jp-news.mercari.com/info/55524",
+    "date": "2026-09-30",
+    "cat": "キャンペーン・お得情報"
+   }
+  ],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-10-02 09:37"
+ },
+ {
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
