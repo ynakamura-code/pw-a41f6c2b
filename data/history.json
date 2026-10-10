@@ -1,5 +1,206 @@
 [
  {
+  "source": "app_ios",
+  "label": "Keepaアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/us/app/keepa-price-tracker/id1518541385?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 6.2.1 → 6.3.0",
+   "更新内容: We're constantly improving our app to provide the best possible experience for our users. In this update, we've fixed some bugs and made some performance enhancements to make the app even better. If you have any feedback or experience any issues, please let us know by sending an email to info@keepa.com. We're always here to help and appreciate your input!"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 6.3.0（2026-10-09 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-10-10 09:39"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "4.7 ( 5136 件の評価",
+   "5136 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "removed": [
+   "4.7 ( 5135 件の評価",
+   "5135 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-10-10 09:39"
+ },
+ {
+  "source": "rule_ps",
+  "label": "パーソナルショッパー（出品者）規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/rule_ps.html",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "UGG スウェット",
+   "adidas CAMPUSシューズ",
+   "5万円以下のセール対象アウター",
+   "オニキス ジュエリー",
+   "MAX MARA GENTILEアウター"
+  ],
+  "removed": [
+   "モンクレール テディ ダウンベスト",
+   "ヴァンクリ 2026 ホリデー",
+   "Max Mara マフラー",
+   "HERMES シプレ シープスキン",
+   "PRADA 折りたたみミニバッグ"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-10-10 09:39"
+ },
+ {
+  "source": "rule",
+  "label": "利用規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "UGG スウェット",
+   "adidas CAMPUSシューズ",
+   "5万円以下のセール対象アウター",
+   "オニキス ジュエリー",
+   "MAX MARA GENTILEアウター"
+  ],
+  "removed": [
+   "モンクレール テディ ダウンベスト",
+   "ヴァンクリ 2026 ホリデー",
+   "Max Mara マフラー",
+   "HERMES シプレ シープスキン",
+   "PRADA 折りたたみミニバッグ"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-10-10 09:39"
+ },
+ {
+  "source": "fee_estimate",
+  "label": "手数料と費用の見積もり（FBA費用など）",
+  "kind": "text",
+  "url": "https://sell.amazon.co.jp/pricing/estimate",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Amazonセラー紹介プログラム",
+   "Amazonセラー紹介プログラム"
+  ],
+  "removed": [
+   "アマゾン出品方法",
+   "FBA",
+   "アマゾン出品方法",
+   "FBA"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "amazon",
+  "platform_name": "Amazon（出品サービス）",
+  "checked_at": "2026-10-10 09:39"
+ },
+ {
+  "source": "referral_fees",
+  "label": "カテゴリー別の販売手数料",
+  "kind": "text",
+  "url": "https://sell.amazon.co.jp/grow/promotions/referral-fees",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Amazonセラー紹介プログラム"
+  ],
+  "removed": [
+   "アマゾン出品方法",
+   "FBA"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "amazon",
+  "platform_name": "Amazon（出品サービス）",
+  "checked_at": "2026-10-10 09:39"
+ },
+ {
+  "source": "pricing",
+  "label": "出品料金・手数料",
+  "kind": "text",
+  "url": "https://sell.amazon.co.jp/pricing",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Amazonセラー紹介プログラム",
+   "Amazonセラー紹介プログラム"
+  ],
+  "removed": [
+   "アマゾン出品方法",
+   "FBA",
+   "アマゾン出品方法",
+   "FBA"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "amazon",
+  "platform_name": "Amazon（出品サービス）",
+  "checked_at": "2026-10-10 09:39"
+ },
+ {
+  "source": "app_ios",
+  "label": "iOSアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/jp/app/%E3%83%95%E3%83%AA%E3%83%9E%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AF%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA-%E3%83%A1%E3%83%AB%E3%83%9A%E3%82%A4%E3%81%AE%E3%82%B9%E3%83%9E%E3%83%9B%E6%B1%BA%E6%B8%88%E3%81%A7%E3%82%82%E3%81%A3%E3%81%A8%E3%81%8A%E5%BE%97/id667861049?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 5.224.1 → 5.224.2",
+   "更新内容: 一部不具合の修正とパフォーマンスの改善を行いました。最新バージョンへのアップデートをお願いします。"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 5.224.2（2026-10-09 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-10-10 09:39"
+ },
+ {
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
