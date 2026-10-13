@@ -3,6 +3,51 @@
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "4.4 ( 533 件の評価",
+   "533 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "removed": [
+   "4.4 ( 532 件の評価",
+   "532 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-10-13 10:11"
+ },
+ {
+  "source": "app_seller_ios",
+  "label": "Amazon Sellerアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/jp/app/amazon-seller/id794141485?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 9.13.1 → 9.14.0",
+   "更新内容: バグ修正とパフォーマンスの改善。"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 9.14.0（2026-10-12 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "amazon",
+  "platform_name": "Amazon（出品サービス）",
+  "checked_at": "2026-10-13 10:11"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
   "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
   "notify": true,
   "changed": true,
