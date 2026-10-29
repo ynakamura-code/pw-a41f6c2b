@@ -7,6 +7,185 @@
   "notify": true,
   "changed": true,
   "first_run": false,
+  "added": [
+   "4.3 ( 536 件の評価",
+   "536 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "removed": [
+   "4.3 ( 535 件の評価",
+   "535 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-10-29 09:42"
+ },
+ {
+  "source": "extension",
+  "label": "拡張機能の仕様・できること（公式説明）",
+  "kind": "text",
+  "url": "https://www.sellersprite.com/jp/sellersprite-extension",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Tik Tok",
+   "Chatwork",
+   "LINE"
+  ],
+  "removed": [
+   "SellerNavi"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-10-29 09:42"
+ },
+ {
+  "source": "price",
+  "label": "料金プラン",
+  "kind": "text",
+  "url": "https://www.sellersprite.com/jp/price",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "LINEで",
+   "つながる",
+   "セラースプライト公式LINE",
+   "セミナー・イベント情報や",
+   "コミュニティのご案内をお届け！",
+   "友だち追加して、最新情報をチェック！"
+  ],
+  "removed": [
+   "セミナ-",
+   "申し込み",
+   "セミナーの申し込み",
+   "セミナーに申し込みをご希望の方は",
+   "チャットワークを追加してください"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-10-29 09:42"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "3.4 ( 5143 件の評価",
+   "5143 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "removed": [
+   "3.4 ( 5141 件の評価",
+   "5141 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-10-29 09:42"
+ },
+ {
+  "source": "help",
+  "label": "販売者ヘルプセンター（目次の変更＝機能変更の目印）",
+  "kind": "text",
+  "url": "https://help.sell.smartstore.naver.com/index.help",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "슈퍼단골 통계"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "smartstore",
+  "platform_name": "スマートストア（NAVER）",
+  "checked_at": "2026-10-29 09:42"
+ },
+ {
+  "source": "program_policy",
+  "label": "プログラムポリシー",
+  "kind": "amazonhelp",
+  "url": "https://sellercentral.amazon.co.jp/help/hub/reference/external/521",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Amazonで販売する商品は、 出品規約 、すべての該当するAmazonポリシー、およびすべての該当する法令を含む出品者の契約条件に準拠しなければなりません。出品者としてのすべての責任を十分に理解した上で、商品を出品してください。",
+   "販売手数料の補てんポリシー",
+   "エージェントポリシー",
+   "注: Amazonのセラーアシスタントは、このトピックについてのヘルプを提供できます。ほとんどの言語設定で、セラーアシスタントからAmazonテクニカルサポートへ直接お問い合わせいただけます。"
+  ],
+  "removed": [
+   "出品者がAmazonで販売する商品は、 出品規約 を遵守する必要があります。これには、該当するすべてのAmazonポリシーおよび適用されるすべての法律と規制も含まれます。出品者としてのすべての責任を十分に理解した上で、商品を出品してください。",
+   "販売手数料の返金ポリシー",
+   "Amazon Easy Ship (AES) プログラムポリシー",
+   "Amazon Easy Ship（AES）破損・紛失商品の返金ポリシー",
+   "Amazon Easy Ship 前払い返品プログラムポリシー",
+   "Amazon Easy Shipの機能と手数料",
+   "Amazon Easy Ship"
+  ],
+  "items": [],
+  "note": "プログラムポリシー",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "amazon",
+  "platform_name": "Amazon（出品サービス）",
+  "checked_at": "2026-10-29 09:42"
+ },
+ {
+  "source": "news",
+  "label": "公式お知らせ（メルカリびより）",
+  "kind": "news",
+  "url": "https://jp-news.mercari.com/info",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [],
+  "items": [
+   {
+    "title": "「あんしんデータ消去オプション」サービス提供終了のお知らせ",
+    "url": "https://jp-news.mercari.com/info/55807",
+    "date": "2026-10-28",
+    "cat": "大切なお知らせ"
+   }
+  ],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-10-29 09:42"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
   "added": [],
   "removed": [
    "keyboard_arrow_left",
