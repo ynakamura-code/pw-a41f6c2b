@@ -1,5 +1,144 @@
 [
  {
+  "source": "app_ios",
+  "label": "Payoneerアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/us/app/payoneer-business-payments/id663338402?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 8.7.8 → 8.7.9",
+   "更新内容: In this update, we fixed bugs and made general performance improvements. More to come soon!"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 8.7.9（2026-11-04 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "payoneer",
+  "platform_name": "Payoneer（ペイオニア）",
+  "checked_at": "2026-11-05 09:31"
+ },
+ {
+  "source": "rule_ps",
+  "label": "パーソナルショッパー（出品者）規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/rule_ps.html",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "スタバ×ポムポムプリンコラボ",
+   "POP MART×TOMORROW X TOGETHER(TXT)",
+   "MINISO × ちいかわ"
+  ],
+  "removed": [
+   "サンリオ×ハロウィン",
+   "MINISO × ちいかわ",
+   "スタバ × レオパード"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-11-05 09:31"
+ },
+ {
+  "source": "rule",
+  "label": "利用規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "スタバ×ポムポムプリンコラボ",
+   "POP MART×TOMORROW X TOGETHER(TXT)",
+   "MINISO × ちいかわ"
+  ],
+  "removed": [
+   "サンリオ×ハロウィン",
+   "MINISO × ちいかわ",
+   "スタバ × レオパード"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-11-05 09:31"
+ },
+ {
+  "source": "seller_updates",
+  "label": "セラーアップデート（仕様変更の告知）",
+  "kind": "text",
+  "url": "https://www.ebay.com/sellercenter/resources/seller-updates",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "eBay Balance"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "ebay",
+  "platform_name": "eBay",
+  "checked_at": "2026-11-05 09:31"
+ },
+ {
+  "source": "app_ios",
+  "label": "iOSアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/jp/app/%E3%83%95%E3%83%AA%E3%83%9E%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AF%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA-%E3%83%A1%E3%83%AB%E3%83%9A%E3%82%A4%E3%81%AE%E3%82%B9%E3%83%9E%E3%83%9B%E6%B1%BA%E6%B8%88%E3%81%A7%E3%82%82%E3%81%A3%E3%81%A8%E3%81%8A%E5%BE%97/id667861049?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 5.227.0 → 5.228.0",
+   "更新内容: 一部不具合の修正とパフォーマンスの改善を行いました。最新バージョンへのアップデートをお願いします。"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 5.228.0（2026-11-04 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-11-05 09:31"
+ },
+ {
+  "source": "news",
+  "label": "公式お知らせ（メルカリびより）",
+  "kind": "news",
+  "url": "https://jp-news.mercari.com/info",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [],
+  "items": [
+   {
+    "title": "【重要】暗号資産つみたて利用規約・暗号資産つみたて取引説明書改定のお知らせ",
+    "url": "https://jp-news.mercari.com/info/54840",
+    "date": "2026-11-04",
+    "cat": "大切なお知らせ"
+   }
+  ],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-11-05 09:31"
+ },
+ {
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
