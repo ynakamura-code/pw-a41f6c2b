@@ -3,6 +3,57 @@
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Chrome ウェブストア",
+   "Chrome ウェブストア",
+   "検索",
+   "検索をクリア",
+   "検索を終了",
+   "メインメニュー"
+  ],
+  "removed": [
+   "メイン コンテンツにスキップ Chrome ウェブストア"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-11-08 09:54"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "3.4 ( 5150 件の評価",
+   "5150 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "removed": [
+   "3.4 ( 5148 件の評価",
+   "5148 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-11-08 09:54"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
   "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
   "notify": true,
   "changed": true,
