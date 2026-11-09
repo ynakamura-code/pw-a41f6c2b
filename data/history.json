@@ -8,6 +8,33 @@
   "changed": true,
   "first_run": false,
   "added": [
+   "メイン コンテンツにスキップ Chrome ウェブストア"
+  ],
+  "removed": [
+   "Chrome ウェブストア",
+   "Chrome ウェブストア",
+   "検索",
+   "検索をクリア",
+   "検索を終了",
+   "メインメニュー"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-11-09 09:41"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
    "Chrome ウェブストア",
    "Chrome ウェブストア",
    "検索",
