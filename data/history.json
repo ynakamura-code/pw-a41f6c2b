@@ -3,6 +3,133 @@
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Chrome ウェブストア",
+   "Chrome ウェブストア",
+   "検索",
+   "検索をクリア",
+   "検索を終了",
+   "メインメニュー"
+  ],
+  "removed": [
+   "メイン コンテンツにスキップ Chrome ウェブストア"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-11-11 09:44"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "3.4 ( 5155 件の評価",
+   "5155 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "removed": [
+   "3.4 ( 5153 件の評価",
+   "5153 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-11-11 09:44"
+ },
+ {
+  "source": "rule_ps",
+  "label": "パーソナルショッパー（出品者）規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/rule_ps.html",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "パーカー・スウェット すぐに届く",
+   "イタリアクラシコスタイル",
+   "エルメス 注目アクセサリー",
+   "ナイキ 黒スニーカー"
+  ],
+  "removed": [
+   "名門革靴ブランド セール価格",
+   "アディダス 新コレクション",
+   "ポケモン トレカ",
+   "大人向け人気スニーカー"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-11-11 09:44"
+ },
+ {
+  "source": "rule",
+  "label": "利用規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "パーカー・スウェット すぐに届く",
+   "イタリアクラシコスタイル",
+   "エルメス 注目アクセサリー",
+   "ナイキ 黒スニーカー"
+  ],
+  "removed": [
+   "名門革靴ブランド セール価格",
+   "アディダス 新コレクション",
+   "ポケモン トレカ",
+   "大人向け人気スニーカー"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-11-11 09:44"
+ },
+ {
+  "source": "prohibited_items",
+  "label": "禁止されている出品物",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/259/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [
+   "株式会社ポケモンが販売する「拡張パック30th CELEBRATION」(未開封)および、「30th CELEBRATION カードセット」(全9種)"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-11-11 09:44"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
   "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
   "notify": true,
   "changed": true,
