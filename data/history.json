@@ -1,5 +1,144 @@
 [
  {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "Chrome ウェブストア",
+   "Chrome ウェブストア",
+   "5.78",
+   "2026年11月12日",
+   "82.44KiB",
+   "検索",
+   "検索をクリア",
+   "検索を終了",
+   "メインメニュー"
+  ],
+  "removed": [
+   "メイン コンテンツにスキップ Chrome ウェブストア",
+   "5.76",
+   "2026年11月9日",
+   "76.57KiB"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-11-13 09:40"
+ },
+ {
+  "source": "legalhub",
+  "label": "規約一覧（リーガルセンター）",
+  "kind": "text",
+  "url": "https://www.paypal.com/jp/legalhub/paypal/home",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "プラットフォームの売り手用アカウント規約"
+  ],
+  "removed": [
+   "PayPalプラットフォームの売り手用アカウント規約"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "paypal",
+  "platform_name": "PayPal（ペイパル）",
+  "checked_at": "2026-11-13 09:40"
+ },
+ {
+  "source": "app_ios",
+  "label": "Payoneerアプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/us/app/payoneer-business-payments/id663338402?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 8.7.9 → 8.7.10",
+   "更新内容: In this update, we fixed bugs and made general performance improvements. More to come soon!"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 8.7.10（2026-11-12 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "payoneer",
+  "platform_name": "Payoneer（ペイオニア）",
+  "checked_at": "2026-11-13 09:40"
+ },
+ {
+  "source": "notice_function",
+  "label": "機能追加・変更のお知らせ",
+  "kind": "text",
+  "url": "https://auctions.yahoo.co.jp/topic/notice/function/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "2026/11/12",
+   "機能追加/変更",
+   "HTMLタグを利用した商品説明文について",
+   "機能追加/変更（295）",
+   "メンテナンス（353）",
+   "その他（423）",
+   "HTMLタグを利用した商品説明文について",
+   "2026年11月（4）"
+  ],
+  "removed": [
+   "機能追加/変更（294）",
+   "メンテナンス（351）",
+   "その他（422）",
+   "保存した検索条件のLINE通知について"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "yahuoku",
+  "platform_name": "ヤフオク!",
+  "checked_at": "2026-11-13 09:40"
+ },
+ {
+  "source": "news",
+  "label": "公式お知らせ（メルカリびより）",
+  "kind": "news",
+  "url": "https://jp-news.mercari.com/info",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [],
+  "items": [
+   {
+    "title": "保護中: リユースを楽しむ3日間「メルカリ グリーンフライデープロジェクト2026」開催！",
+    "url": "https://jp-news.mercari.com/info/56020?preview=true",
+    "date": "2026-11-12",
+    "cat": "キャンペーン・お得情報"
+   },
+   {
+    "title": "らくらくメルカリ便が「セルフ発送機」からも発送できるようになりました",
+    "url": "https://jp-news.mercari.com/info/55882",
+    "date": "2026-11-12",
+    "cat": "配送サービス"
+   }
+  ],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-11-13 09:40"
+ },
+ {
   "source": "app_ios",
   "label": "Keepaアプリの更新",
   "kind": "appstore",
