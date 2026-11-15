@@ -3,6 +3,64 @@
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "4.1 ( 540 件の評価",
+   "5 点満点で 4.1",
+   "540 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "removed": [
+   "4.2 ( 539 件の評価",
+   "5 点満点で 4.2",
+   "539 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "sellersprite",
+  "platform_name": "セラースプライト",
+  "checked_at": "2026-11-15 09:55"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "3.4 ( 5159 件の評価",
+   "5159 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "1.8",
+   "平均評価: 1.8 つ星（5 つ星が最高）",
+   "1.8",
+   "平均評価: 1.8 つ星（5 つ星が最高）"
+  ],
+  "removed": [
+   "3.4 ( 5155 件の評価",
+   "5155 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "2.0",
+   "平均評価: 2 つ星（5 つ星が最高）",
+   "2.0",
+   "平均評価: 2 つ星（5 つ星が最高）"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-11-15 09:55"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
   "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
   "notify": true,
   "changed": true,
