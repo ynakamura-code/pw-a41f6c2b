@@ -1,6 +1,24 @@
 {
  "items": [
   {
+   "title": "【重要】フィッシング詐欺にご注意ください",
+   "url": "https://jp-news.mercari.com/info/55909",
+   "date": "2026-11-17",
+   "cat": "安全に使うために"
+  },
+  {
+   "title": "「売ったあとのお金はどこへ？」「買うときのお金はどこから？」ビットコイン取引サービスのお金の動きをわかりやすく解説！",
+   "url": "https://jp-news.mercari.com/info/56052",
+   "date": "2026-11-16",
+   "cat": "使い方・解説"
+  },
+  {
+   "title": "【重要】アカウントの売買や貸借に関する注意喚起",
+   "url": "https://jp-news.mercari.com/info/55903",
+   "date": "2026-11-16",
+   "cat": "安全に使うために"
+  },
+  {
    "title": "【ご注意ください】商品情報を偽装した出品および取引の禁止について",
    "url": "https://jp-news.mercari.com/info/56085",
    "date": "2026-11-13",
@@ -53,24 +71,6 @@
    "url": "https://jp-news.mercari.com/info/55828",
    "date": "2026-11-10",
    "cat": "キャンペーン・お得情報"
-  },
-  {
-   "title": "【重要】暗号資産GRT・MANA・SAND取扱い終了について（ビットコイン取引サービス）",
-   "url": "https://jp-news.mercari.com/info/55777",
-   "date": "2026-11-06",
-   "cat": "大切なお知らせ"
-  },
-  {
-   "title": "【m department】Holiday Fair開催！30%OFF（最大1万円）クーポンプレゼント！鑑定済みブランド品・整備済みスマホをおトクに購入しよう",
-   "url": "https://jp-news.mercari.com/info/55853",
-   "date": "2026-11-05",
-   "cat": "キャンペーン・お得情報"
-  },
-  {
-   "title": "【重要】暗号資産つみたて利用規約・暗号資産つみたて取引説明書改定のお知らせ",
-   "url": "https://jp-news.mercari.com/info/54840",
-   "date": "2026-11-04",
-   "cat": "大切なお知らせ"
   }
  ]
 }
