@@ -3,6 +3,175 @@
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "3.5 ( 5187 件の評価",
+   "5187 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "Seller Assistant: FBA料金シミュレーター & せどり リサーチツール",
+   "FBA・FBM対応の利益計算ツール。ROI、販売数予測、出品制限、知的財産アラート、Keepaグラフを全商品ページに表示するAmazon 拡張機能です",
+   "Seller Assistant: FBA料金シミュレーター & せどり リサーチツール",
+   "FBA・FBM対応の利益計算ツール。ROI、販売数予測、出品制限、知的財産アラート、Keepaグラフを全商品ページに表示するAmazon 拡張機能です"
+  ],
+  "removed": [
+   "3.5 ( 5181 件の評価",
+   "5181 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。",
+   "Seller Assistant — Amazon Product Research Tool",
+   "Amazon Seller Tools: FBM & FBA Calculator, IP Alert, Quick View, Stock Checker, Restrictions Checker, ASIN Grabber, Side Panel View",
+   "Seller Assistant — Amazon Product Research Tool",
+   "Amazon Seller Tools: FBM & FBA Calculator, IP Alert, Quick View, Stock Checker, Restrictions Checker, ASIN Grabber, Side Panel View"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-11-24 13:14"
+ },
+ {
+  "source": "rule_ps",
+  "label": "パーソナルショッパー（出品者）規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/rule_ps.html",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "BUYMA公式API",
+   "出品者アプリ"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-11-24 13:14"
+ },
+ {
+  "source": "rule",
+  "label": "利用規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "BUYMA公式API",
+   "出品者アプリ"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-11-24 13:14"
+ },
+ {
+  "source": "notice_function",
+  "label": "機能追加・変更のお知らせ",
+  "kind": "text",
+  "url": "https://auctions.yahoo.co.jp/topic/notice/function/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "2026/11/24",
+   "機能追加/変更",
+   "おてがる配送（ヤマト運輸）の送料の改定について",
+   "機能追加/変更（296）",
+   "おてがる配送（ヤマト運輸）の送料の改定について",
+   "2026年11月（10）"
+  ],
+  "removed": [
+   "機能追加/変更（295）",
+   "トレーディングカードの出品・検索項目を追加します",
+   "2026年11月（9）"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "yahuoku",
+  "platform_name": "ヤフオク!",
+  "checked_at": "2026-11-24 13:14"
+ },
+ {
+  "source": "ship_table",
+  "label": "配送方法 早わかり表",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/1080/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "参考：",
+   "おすすめの配送方法が表示されるように！出品も発送も、もう迷わない"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-11-24 13:14"
+ },
+ {
+  "source": "flow_sell",
+  "label": "出品までの流れ・売り方",
+  "kind": "text",
+  "url": "https://help.jp.mercari.com/guide/articles/62/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "※参考： おすすめの配送方法が表示されるように！出品も発送も、もう迷わない"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-11-24 13:14"
+ },
+ {
+  "source": "news",
+  "label": "公式お知らせ（メルカリびより）",
+  "kind": "news",
+  "url": "https://jp-news.mercari.com/info",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [],
+  "items": [
+   {
+    "title": "本日よりメルペイ店舗用アプリのログイン方法が変わります（アプリアップデートのお願い）",
+    "url": "https://jp-news.mercari.com/info/56147",
+    "date": "2026-11-24",
+    "cat": "新機能・アップデート"
+   }
+  ],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-11-24 13:14"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
   "url": "https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb",
   "notify": true,
   "changed": true,
