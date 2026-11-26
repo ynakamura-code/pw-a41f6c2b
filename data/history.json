@@ -3,6 +3,179 @@
   "source": "chrome_ext",
   "label": "Chrome拡張機能のバージョン・説明",
   "kind": "text",
+  "url": "https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "3.5 ( 5192 件の評価",
+   "5192 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "removed": [
+   "3.5 ( 5189 件の評価",
+   "5189 件の評価 結果とレビューについて、詳しくはこちらをご覧ください。"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "keepa",
+  "platform_name": "Keepa",
+  "checked_at": "2026-11-26 11:06"
+ },
+ {
+  "source": "app_seller_ios",
+  "label": "스마트스토어센터アプリの更新",
+  "kind": "appstore",
+  "url": "https://apps.apple.com/kr/app/%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8A%A4%ED%86%A0%EC%96%B4%EC%84%BC%ED%84%B0/id1527200611?uo=4",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "バージョン 10.0.0 → 10.1.0",
+   "更新内容: [v10.1.0 주요 업데이트 내용]\n- 내 스토어에 문제가 생겼을때, 빠르게 발견하게 돕는 AI시그널 오픈"
+  ],
+  "removed": [],
+  "items": [],
+  "note": "現在 10.1.0（2026-11-25 公開）",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "smartstore",
+  "platform_name": "スマートストア（NAVER）",
+  "checked_at": "2026-11-26 11:06"
+ },
+ {
+  "source": "help",
+  "label": "販売者ヘルプセンター（目次の変更＝機能変更の目印）",
+  "kind": "text",
+  "url": "https://help.sell.smartstore.naver.com/index.help",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "AI시그널",
+   "보고서"
+  ],
+  "removed": [
+   "기획전 관리"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "smartstore",
+  "platform_name": "スマートストア（NAVER）",
+  "checked_at": "2026-11-26 11:06"
+ },
+ {
+  "source": "rule_ps",
+  "label": "パーソナルショッパー（出品者）規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/rule_ps.html",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "カーハート× ナイキコラボ",
+   "ハイブランドダウン 10万円以下",
+   "手袋 すぐに届く",
+   "ラッピング可 女性向けギフトアイテム"
+  ],
+  "removed": [
+   "セール対象 アウター",
+   "イタリアクラシコスタイル",
+   "高級ブランド 穴場",
+   "冬用サンダル おすすめ"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-11-26 11:06"
+ },
+ {
+  "source": "rule",
+  "label": "利用規約",
+  "kind": "text",
+  "url": "https://www.buyma.com/contents/rule/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "カーハート× ナイキコラボ",
+   "ハイブランドダウン 10万円以下",
+   "手袋 すぐに届く",
+   "ラッピング可 女性向けギフトアイテム"
+  ],
+  "removed": [
+   "セール対象 アウター",
+   "イタリアクラシコスタイル",
+   "高級ブランド 穴場",
+   "冬用サンダル おすすめ"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "buyma",
+  "platform_name": "BUYMA",
+  "checked_at": "2026-11-26 11:06"
+ },
+ {
+  "source": "notice_function",
+  "label": "機能追加・変更のお知らせ",
+  "kind": "text",
+  "url": "https://auctions.yahoo.co.jp/topic/notice/function/",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [
+   "ルール追加/変更（150）",
+   "2026年11月（11）"
+  ],
+  "removed": [
+   "ルール追加/変更（149）",
+   "2026年11月（10）"
+  ],
+  "items": [],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "yahuoku",
+  "platform_name": "ヤフオク!",
+  "checked_at": "2026-11-26 11:06"
+ },
+ {
+  "source": "news",
+  "label": "公式お知らせ（メルカリびより）",
+  "kind": "news",
+  "url": "https://jp-news.mercari.com/info",
+  "notify": true,
+  "changed": true,
+  "first_run": false,
+  "added": [],
+  "removed": [],
+  "items": [
+   {
+    "title": "暗号資産のつみたては、どこからいくら使われる？組み合わせ別に解説",
+    "url": "https://jp-news.mercari.com/info/56184",
+    "date": "2026-11-25",
+    "cat": "使い方・解説"
+   }
+  ],
+  "note": "",
+  "shot_now": "",
+  "shot_prev": "",
+  "platform": "mercari",
+  "platform_name": "メルカリ",
+  "checked_at": "2026-11-26 11:06"
+ },
+ {
+  "source": "chrome_ext",
+  "label": "Chrome拡張機能のバージョン・説明",
+  "kind": "text",
   "url": "https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb",
   "notify": true,
   "changed": true,
